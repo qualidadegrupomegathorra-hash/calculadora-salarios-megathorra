@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de Salários - Mega Thorra (V2)</title>
+
+  <style>
+    :root{
+      --brand:#d50000;
+      --brand-2:#a80000;
+      --ink:#0f172a;
+      --muted:#64748b;
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --line:#e8eaf1;
+      --shadow:0 14px 40px rgba(15,23,42,.10);
+      --radius:18px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", "Noto Sans", "Liberation Sans", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 500px at 50% -80px, rgba(213,0,0,.10), transparent 55%),
+        radial-gradient(900px 380px at 10% 30%, rgba(213,0,0,.08), transparent 45%),
+        var(--bg);
+    }
+    .wrap{ max-width: 1040px; margin: 28px auto; padding: 0 18px 28px; }
+    .header{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; margin-bottom:18px;
+    }
+    .brandBox{
+      display:flex; align-items:center; gap:14px;
+      background: rgba(255,255,255,.75);
+      border: 1px solid rgba(255,255,255,.5);
+      backdrop-filter: blur(6px);
+      padding: 14px 16px; border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, .06);
+      flex: 1;
+    }
+    .brandBox img{ height: 54px; width:auto; }
+    .titleBlock{ line-height:1.1; }
+    .titleBlock h1{ font-size: 20px; margin:0; letter-spacing: .2px; }
+    .titleBlock p{ margin:6px 0 0; color: var(--muted); font-size: 13px; }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid rgba(213,0,0,.18);
+      background: rgba(213,0,0,.08);
+      color: var(--brand-2);
+      font-weight: 800;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 420px 1fr;
+      gap: 18px;
+      align-items:start;
+    }
+    .card{
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(232,234,241,.9);
+      overflow:hidden;
+    }
+    .cardHeader{
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .cardHeader h2{ font-size: 14px; margin:0; letter-spacing:.2px; }
+    .cardHeader .hint{ font-size: 12px; color: var(--muted); }
+    .cardBody{ padding: 16px 18px 18px; }
+
+    .field{ display:flex; flex-direction:column; gap:6px; margin-bottom: 12px; }
+    .field label{
+      font-size: 12px; color: var(--muted); font-weight: 800;
+      display:flex; align-items:center; gap:8px;
+    }
+    .control{
+      display:flex; align-items:center; gap:10px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 10px 12px;
+      background:#fff;
+      transition: .15s ease;
+    }
+    .control:focus-within{
+      border-color: rgba(213,0,0,.35);
+      box-shadow: 0 0 0 4px rgba(213,0,0,.10);
+    }
+    select, input{
+      width:100%;
+      border:none; outline:none;
+      font-size: 14px;
+      background: transparent;
+      color: var(--ink);
+    }
+    input[readonly]{ color:#334155; }
+
+    .mini{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+
+    .actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px; }
+    .btn{
+      flex:1; min-width: 160px;
+      border:none; border-radius: 14px;
+      padding: 12px 14px;
+      font-weight: 900;
+      cursor:pointer;
+      transition: .15s ease;
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      letter-spacing:.2px;
+    }
+    .btnPrimary{
+      background: var(--brand);
+      color:#fff;
+      box-shadow: 0 10px 22px rgba(213,0,0,.22);
+    }
+    .btnPrimary:hover{ background: var(--brand-2); transform: translateY(-1px); }
+    .btnGhost{
+      background:#fff;
+      border:1px solid var(--line);
+      color: var(--ink);
+    }
+    .btnGhost:hover{ border-color: rgba(213,0,0,.35); transform: translateY(-1px); }
+    .btnDanger{
+      background: rgba(220,38,38,.10);
+      border: 1px solid rgba(220,38,38,.25);
+      color:#b91c1c;
+    }
+    .btnDanger:hover{ background: rgba(220,38,38,.14); transform: translateY(-1px); }
+
+    .result{
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(22,163,74,.25);
+      background: rgba(22,163,74,.06);
+      display:none;
+      color: #14532d;
+      font-weight: 900;
+    }
+    .explain{
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      color: #1e293b;
+      display:none;
+    }
+    .indicators{
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #fff1f2;
+      border: 1px solid rgba(220,38,38,.20);
+      display:none;
+    }
+    .indicators h3{
+      margin:0 0 10px;
+      font-size: 13px;
+      font-weight: 950;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      color:#9f1239;
+    }
+    .indRow{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      padding: 6px 0;
+      border-top: 1px dashed rgba(220,38,38,.20);
+      font-size: 13px;
+      color:#334155;
+    }
+    .indRow:first-of-type{ border-top:none; }
+
+    .tableWrap{ width:100%; }
+    table{ width:100%; border-collapse: collapse; }
+    thead th{
+      text-align:left;
+      padding: 12px 14px;
+      font-size: 12px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      background: #fafbff;
+    }
+    thead th:nth-child(2), thead th:nth-child(3){ text-align:right; }
+
+    tbody td{
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    tbody td:nth-child(2), tbody td:nth-child(3){ text-align:right; font-variant-numeric: tabular-nums; }
+    tbody tr:hover td{ background:#fcfcff; }
+
+    .sectionRow td{ padding: 10px 14px; border-bottom:none; background: transparent; }
+    .sectionTag{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(213,0,0,.18);
+      background: rgba(213,0,0,.06);
+      color: var(--brand-2);
+      font-weight: 950;
+      font-size: 12px;
+    }
+    .strong{ background: rgba(213,0,0,.06); font-weight: 950; }
+    .strong td{ border-bottom: 1px solid rgba(213,0,0,.15); }
+
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: 1fr; }
+      .badge{ display:none; }
+    }
+    @media print{
+      body{ background:#fff; }
+      .header, .actions, .result, .explain, .indicators{ display:none !important; }
+      .card{ box-shadow:none; border:1px solid #ddd; }
+      .wrap{ margin:0; padding:0; max-width:100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <div class="brandBox">
+        <img src="logo.png" alt="Mega Thorra" />
+        <div class="titleBlock">
+          <h1>Calculadora de Salários</h1>
+          <p>Selecione a loja, o cargo e a quantidade para preencher automaticamente os custos mensais e anuais.</p>
+        </div>
+      </div>
+      <div class="badge">🧮 Custo Médio Anual 2026</div>
+    </div>
+
+    <div class="grid">
+
+      <!-- ESQUERDA -->
+      <div class="card">
+        <div class="cardHeader">
+          <h2>Dados da loja</h2>
+          <div class="hint">Loja + Cargo + QTD</div>
+        </div>
+
+        <div class="cardBody">
+          <div class="field">
+            <label>🏬 Escolha uma loja</label>
+            <div class="control">
+              <select id="lojaSelect">
+                <option value="">Selecione...</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>🧾 Cargo</label>
+            <div class="control">
+              <select id="cargoSelect" disabled>
+                <option value="">Selecione...</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mini">
+            <div class="field">
+              <label>💳 Regime da loja</label>
+              <div class="control">
+                <input id="regime" type="text" readonly />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>👥 QTD. FUNC.</label>
+              <div class="control">
+                <input id="qtd" type="number" min="1" step="1" value="1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btnPrimary" id="btnCalcular">✅ Calcular</button>
+            <button class="btn btnDanger" id="btnLimpar">🗑️ Limpar</button>
+            <button class="btn btnGhost" id="btnImprimir">🖨️ Imprimir (PDF)</button>
+          </div>
+
+          <div class="result" id="resultado"></div>
+          <div class="explain" id="resumoCustoReal"></div>
+
+          <div class="indicators" id="indicadoresBox">
+            <h3>📌 Indicadores (%)</h3>
+            <div class="indRow"><span>% além do salário base</span><b id="indAlem"></b></div>
+            <div class="indRow"><span>% benefícios sobre salário</span><b id="indBen"></b></div>
+            <div class="indRow"><span>% encargos sobre salário</span><b id="indEnc"></b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIREITA -->
+      <div class="card">
+        <div class="cardHeader">
+          <h2>Resumo de custos</h2>
+          <div class="hint">Mensal × Anual (com composições)</div>
+        </div>
+        <div class="cardBody">
+          <div class="tableWrap" id="tabelaCustos"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    const fmtBRL = (v) => {
+      const n = Number(v);
+      if (!Number.isFinite(n)) return "—";
+      return n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+    };
+
+    const fmtPct = (v) => {
+      const n = Number(v);
+      if (!Number.isFinite(n)) return "—";
+      return n.toFixed(2).replace(".", ",") + "%";
+    };
+
+    const mensalDe = (anual) => Number(anual || 0) / 12;
+
+    let dados = [];
+    let registroAtual = null; // loja+cargo
+
+    function linha(nome, mes, ano, strong=false) {
+      return `
+        <tr class="${strong ? "strong" : ""}">
+          <td>${nome}</td>
+          <td>${fmtBRL(mes)}</td>
+          <td>${fmtBRL(ano)}</td>
+        </tr>
+      `;
+    }
+
+    function separador(titulo) {
+      return `
+        <tr class="sectionRow">
+          <td colspan="3">
+            <span class="sectionTag">📌 ${titulo}</span>
+          </td>
+        </tr>
+      `;
+    }
+
+    function getQtd() {
+      const v = Number($("qtd").value);
+      if (!Number.isFinite(v) || v <= 0) return 1;
+      return Math.floor(v);
+    }
+
+    function renderTabela(reg) {
+      const el = $("tabelaCustos");
+
+      if (!reg) {
+        el.innerHTML = "<div style='color:#64748b;font-size:13px;'>Selecione uma loja e um cargo para visualizar os custos.</div>";
+        return;
+      }
+
+      const qtd = getQtd();
+      const r = reg;
+
+      // BASE (mensal)
+      const salarioBaseMes = Number(r.salario_na || 0) * qtd;
+      const quebraMes      = Number(r.quebra_de_cx || 0) * qtd;
+      const vtMes          = Number(r.vale_transporte || 0) * qtd;
+      const planoAssistMes = Number(r.plano_assist || 0) * qtd;
+      const planoOdontoMes = Number(r.plano_odont || 0) * qtd;
+      const vaMes          = Number(r.vale_alimentacao || 0) * qtd;
+
+      const salarioTotalMes = Number(r.salario_total || 0) * qtd;
+      const salarioAno      = Number(r.salario_ano || 0) * qtd;
+
+      // Encargos anuais (para composição anual)
+      const feriasAno   = Number(r.ferias || 0) * qtd;
+      const decimoAno   = Number(r.c_13_salario || 0) * qtd;
+      const fgtsAno     = Number(r.fgts || 0) * qtd;
+      const quarentaAno = Number(r.c_0_4 || 0) * qtd;
+
+      // Totais
+      const custoMensal = Number(r.custo_mensal || 0) * qtd;
+      const custoAnual  = Number(r.custo_anual || 0) * qtd;
+
+      // Encargos/Impostos (igual Excel): CUSTO - SALARIO TOTAL
+      const encargosMes = custoMensal - salarioTotalMes;
+      const encargosAno = custoAnual - salarioAno;
+
+      // Composição mensal (igual Excel): INSS (mês) + FGTS(média) + 40%(média) + OUTROS(restante)
+      const inssMes = Number(r.inss_mes || 0) * qtd;
+      const fgtsMes = mensalDe(Number(r.fgts || 0)) * qtd;
+      const quarentaMes = mensalDe(Number(r.c_0_4 || 0)) * qtd;
+      const outrosMes = Math.max(0, encargosMes - inssMes - fgtsMes - quarentaMes);
+
+      // Composição anual (igual Excel): INSS + FGTS + 40% + FÉRIAS + 13º + OUTROS (INSS+IMPOSTOS)
+      const inssAno = Number(r.inss_ano || 0) * qtd;
+      const inssImpostosAno = Number(r.inss_impostos || 0) * qtd;
+
+      el.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Mensal</th>
+              <th>Anual</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            ${separador("Resumo Mensal (R$)")}
+            ${linha("Salário base", salarioBaseMes, salarioBaseMes * 12)}
+            ${linha("Benefícios na folha", (salarioTotalMes - salarioBaseMes), (salarioAno - (salarioBaseMes*12)), true)}
+            ${linha("&nbsp;&nbsp;• Quebra de caixa", quebraMes, quebraMes * 12)}
+            ${linha("&nbsp;&nbsp;• Vale transporte", vtMes, vtMes * 12)}
+            ${linha("&nbsp;&nbsp;• Plano assist.", planoAssistMes, planoAssistMes * 12)}
+            ${linha("&nbsp;&nbsp;• Plano odontológico", planoOdontoMes, planoOdontoMes * 12)}
+            ${linha("&nbsp;&nbsp;• Vale alimentação", vaMes, vaMes * 12)}
+            ${linha("Salário total", salarioTotalMes, salarioAno, true)}
+
+            ${separador("Encargos / Impostos")}
+            ${linha("Encargos / Impostos (total)", encargosMes, encargosAno, true)}
+            ${linha("&nbsp;&nbsp;• INSS", inssMes, inssAno)}
+            ${linha("&nbsp;&nbsp;• FGTS", fgtsMes, fgtsAno)}
+            ${linha("&nbsp;&nbsp;• 40%", quarentaMes, quarentaAno)}
+            ${linha("&nbsp;&nbsp;• Férias", 0, feriasAno)}
+            ${linha("&nbsp;&nbsp;• 13º Salário", 0, decimoAno)}
+            ${linha("&nbsp;&nbsp;• Outros", outrosMes, inssImpostosAno)}
+
+            ${separador("Totais")}
+            ${linha("Custo mensal total", custoMensal, custoAnual, true)}
+
+          </tbody>
+        </table>
+      `;
+    }
+
+    function atualizarIndicadores(reg) {
+      const box = $("indicadoresBox");
+      if (!reg) {
+        box.style.display = "none";
+        return;
+      }
+
+      const qtd = getQtd();
+      const salarioBase = Number(reg.salario_na || 0) * qtd;
+      const salarioTotal = Number(reg.salario_total || 0) * qtd;
+      const custoMensal = Number(reg.custo_mensal || 0) * qtd;
+
+      if (salarioBase <= 0) {
+        box.style.display = "none";
+        return;
+      }
+
+      const pctAlem = ((custoMensal - salarioBase) / salarioBase) * 100;
+      const pctBen  = ((salarioTotal - salarioBase) / salarioBase) * 100;
+      const pctEnc  = ((custoMensal - salarioTotal) / salarioBase) * 100; // <-- IGUAL AO EXCEL
+
+      $("indAlem").textContent = fmtPct(pctAlem);
+      $("indBen").textContent  = fmtPct(pctBen);
+      $("indEnc").textContent  = fmtPct(pctEnc);
+
+      box.style.display = "block";
+    }
+
+    function atualizarCards(reg) {
+      // limpa
+      $("resultado").style.display = "none";
+      $("resultado").innerHTML = "";
+      $("resumoCustoReal").style.display = "none";
+      $("resumoCustoReal").innerHTML = "";
+
+      renderTabela(reg);
+      atualizarIndicadores(reg);
+    }
+
+    function preencherRegime(reg) {
+      $("regime").value = reg?.regime ?? "";
+    }
+
+    function limparTudo() {
+      $("lojaSelect").value = "";
+      $("cargoSelect").innerHTML = `<option value="">Selecione...</option>`;
+      $("cargoSelect").disabled = true;
+      $("regime").value = "";
+      $("qtd").value = 1;
+
+      registroAtual = null;
+
+      $("resultado").style.display = "none";
+      $("resumoCustoReal").style.display = "none";
+      $("indicadoresBox").style.display = "none";
+
+      renderTabela(null);
+    }
+
+    function calcular() {
+      if (!registroAtual) {
+        alert("Selecione uma loja e um cargo primeiro.");
+        return;
+      }
+
+      const qtd = getQtd();
+      const salarioBase = Number(registroAtual.salario_na || 0) * qtd;
+      const salarioTotal = Number(registroAtual.salario_total || 0) * qtd;
+      const custoMensal = Number(registroAtual.custo_mensal || 0) * qtd;
+
+      $("resultado").style.display = "block";
+      $("resultado").innerHTML = `✅ <b>Custo mensal total:</b> <b>${fmtBRL(custoMensal)}</b>`;
+
+      const box = $("resumoCustoReal");
+      if (salarioBase > 0) {
+        const percentualExtra = ((custoMensal - salarioBase) / salarioBase) * 100;
+        const custoPorReal = custoMensal / salarioBase;
+
+        box.style.display = "block";
+        box.innerHTML = `
+          <div style="font-size:15px; font-weight:950; margin-bottom:6px;">💡 O salário base não é o custo</div>
+          <div style="font-size:14px; line-height:1.6;">
+            O salário base é <b>${fmtBRL(salarioBase)}</b>.
+            <br>
+            Para manter, a empresa desembolsa <b>${fmtBRL(custoMensal)}</b> por mês,
+            o que representa <b style="color:#dc2626;">+${percentualExtra.toFixed(2)}%</b> além do salário base.
+          </div>
+          <div style="margin-top:8px; font-size:13px; color:#475569;">
+            Para cada <b>R$ 1,00</b> de salário base, o custo real é de <b>R$ ${custoPorReal.toFixed(2)}</b>.
+          </div>
+        `;
+      } else {
+        box.style.display = "block";
+        box.innerHTML = "Não foi possível calcular porque o salário base está zero.";
+      }
+
+      atualizarIndicadores(registroAtual);
+    }
+
+    function popularLojas() {
+      const lojasUnicas = Array.from(new Set(dados.map(d => String(d.loja)))).sort((a,b)=>a.localeCompare(b,"pt-BR"));
+      const sel = $("lojaSelect");
+      for (const l of lojasUnicas) {
+        const opt = document.createElement("option");
+        opt.value = l;
+        opt.textContent = `Loja ${l}`;
+        sel.appendChild(opt);
+      }
+    }
+
+    function popularCargosDaLoja(loja) {
+      const selCargo = $("cargoSelect");
+      selCargo.innerHTML = `<option value="">Selecione...</option>`;
+
+      if (!loja) {
+        selCargo.disabled = true;
+        return;
+      }
+
+      const cargos = Array.from(
+        new Set(
+          dados
+            .filter(d => String(d.loja) === String(loja))
+            .map(d => String(d.cargo).trim())
+            .filter(Boolean)
+        )
+      ).sort((a,b)=>a.localeCompare(b,"pt-BR"));
+
+      for (const c of cargos) {
+        const opt = document.createElement("option");
+        opt.value = c;
+        opt.textContent = c;
+        selCargo.appendChild(opt);
+      }
+
+      selCargo.disabled = cargos.length === 0;
+    }
+
+    function buscarRegistro(loja, cargo) {
+      return dados.find(d => String(d.loja) === String(loja) && String(d.cargo).trim() === String(cargo).trim()) || null;
+    }
+
+    async function carregarDados() {
+      const resp = await fetch("lojas.json", { cache: "no-store" });
+      if (!resp.ok) throw new Error("Falha ao carregar lojas.json");
+      dados = await resp.json();
+
+      popularLojas();
+      renderTabela(null);
+
+      $("lojaSelect").addEventListener("change", (e) => {
+        const loja = e.target.value;
+        popularCargosDaLoja(loja);
+
+        $("regime").value = "";
+        registroAtual = null;
+
+        $("resultado").style.display = "none";
+        $("resumoCustoReal").style.display = "none";
+        $("indicadoresBox").style.display = "none";
+
+        renderTabela(null);
+      });
+
+      $("cargoSelect").addEventListener("change", (e) => {
+        const loja = $("lojaSelect").value;
+        const cargo = e.target.value;
+
+        const reg = buscarRegistro(loja, cargo);
+        registroAtual = reg;
+
+        preencherRegime(reg);
+        atualizarCards(reg);
+      });
+
+      $("qtd").addEventListener("input", () => {
+        if (!registroAtual) return;
+        atualizarCards(registroAtual);
+      });
+
+      $("btnCalcular").addEventListener("click", calcular);
+      $("btnLimpar").addEventListener("click", limparTudo);
+      $("btnImprimir").addEventListener("click", () => window.print());
+    }
+
+    carregarDados().catch(err => {
+      console.error(err);
+      alert("Erro ao carregar lojas.json. Confirme se ele está na mesma pasta do index.html e se o nome está exatamente 'lojas.json'.");
+    });
+  </script>
+</body>
+</html>
