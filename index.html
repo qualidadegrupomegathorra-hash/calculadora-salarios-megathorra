@@ -387,6 +387,10 @@
       const planoOdontoMes = Number(r.plano_odont || 0) * qtd;
       const vaMes          = Number(r.vale_alimentacao || 0) * qtd;
 
+      // ✅ BENEFÍCIOS (igual Excel): soma direta (nunca por diferença)
+      const beneficiosMes = quebraMes + vtMes + planoAssistMes + planoOdontoMes + vaMes;
+      const beneficiosAno = beneficiosMes * 12;
+
       const salarioTotalMes = Number(r.salario_total || 0) * qtd;
       const salarioAno      = Number(r.salario_ano || 0) * qtd;
 
@@ -396,7 +400,7 @@
       const fgtsAno     = Number(r.fgts || 0) * qtd;
       const quarentaAno = Number(r.c_0_4 || 0) * qtd;
 
-      // Totais
+      // Totais (vem pronto do JSON/CSV)
       const custoMensal = Number(r.custo_mensal || 0) * qtd;
       const custoAnual  = Number(r.custo_anual || 0) * qtd;
 
@@ -427,7 +431,7 @@
 
             ${separador("Resumo Mensal (R$)")}
             ${linha("Salário base", salarioBaseMes, salarioBaseMes * 12)}
-            ${linha("Benefícios na folha", (salarioTotalMes - salarioBaseMes), (salarioAno - (salarioBaseMes*12)), true)}
+            ${linha("Benefícios na folha", beneficiosMes, beneficiosAno, true)}
             ${linha("&nbsp;&nbsp;• Quebra de caixa", quebraMes, quebraMes * 12)}
             ${linha("&nbsp;&nbsp;• Vale transporte", vtMes, vtMes * 12)}
             ${linha("&nbsp;&nbsp;• Plano assist.", planoAssistMes, planoAssistMes * 12)}
@@ -460,6 +464,7 @@
       }
 
       const qtd = getQtd();
+
       const salarioBase = Number(reg.salario_na || 0) * qtd;
       const salarioTotal = Number(reg.salario_total || 0) * qtd;
       const custoMensal = Number(reg.custo_mensal || 0) * qtd;
@@ -470,8 +475,12 @@
       }
 
       const pctAlem = ((custoMensal - salarioBase) / salarioBase) * 100;
+
+      // ✅ benefícios % (igual Excel): (salário_total - salário_base) / salário_base
       const pctBen  = ((salarioTotal - salarioBase) / salarioBase) * 100;
-      const pctEnc  = ((custoMensal - salarioTotal) / salarioBase) * 100; // <-- IGUAL AO EXCEL
+
+      // ✅ encargos % (igual Excel): (custo - salário_total) / salário_base
+      const pctEnc  = ((custoMensal - salarioTotal) / salarioBase) * 100;
 
       $("indAlem").textContent = fmtPct(pctAlem);
       $("indBen").textContent  = fmtPct(pctBen);
@@ -481,7 +490,6 @@
     }
 
     function atualizarCards(reg) {
-      // limpa
       $("resultado").style.display = "none";
       $("resultado").innerHTML = "";
       $("resumoCustoReal").style.display = "none";
@@ -519,7 +527,6 @@
 
       const qtd = getQtd();
       const salarioBase = Number(registroAtual.salario_na || 0) * qtd;
-      const salarioTotal = Number(registroAtual.salario_total || 0) * qtd;
       const custoMensal = Number(registroAtual.custo_mensal || 0) * qtd;
 
       $("resultado").style.display = "block";

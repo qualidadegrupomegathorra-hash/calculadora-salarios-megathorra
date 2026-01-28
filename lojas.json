@@ -21,8 +21,8 @@
     "inss_ano": 2319.0917333333337,
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
-    "custo_anual": 31952.445901866668,
-    "custo_mensal": 2662.7038251555555
+    "custo_mensal": 2662.7038251555555,
+    "custo_anual": 31952.445901866668
   },
   {
     "regime": "REAL",
@@ -46,8 +46,8 @@
     "inss_ano": 2319.0917333333337,
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
-    "custo_anual": 31952.445901866668,
-    "custo_mensal": 2662.7038251555555
+    "custo_mensal": 2662.7038251555555,
+    "custo_anual": 31952.445901866668
   },
   {
     "regime": "REAL",
@@ -71,8 +71,8 @@
     "inss_ano": 2277.6853333333333,
     "inss_impostos": 633.1965226666667,
     "inss_total": 2910.881856,
-    "custo_anual": 31381.948522666666,
-    "custo_mensal": 2615.162376888889
+    "custo_mensal": 2615.162376888889,
+    "custo_anual": 31381.948522666666
   },
   {
     "regime": "REAL",
@@ -96,8 +96,8 @@
     "inss_ano": 2475.4941333333336,
     "inss_impostos": 688.1873690666667,
     "inss_total": 3163.6815024,
-    "custo_anual": 34107.35816906667,
-    "custo_mensal": 2842.2798474222222
+    "custo_mensal": 2842.2798474222222,
+    "custo_anual": 34107.35816906667
   },
   {
     "regime": "SIMPLES",
@@ -121,8 +121,8 @@
     "inss_ano": 2124.611733333333,
     "inss_impostos": 0.0,
     "inss_total": 2124.611733333333,
-    "custo_anual": 28682.2584,
-    "custo_mensal": 2390.1882
+    "custo_mensal": 2390.1882,
+    "custo_anual": 28682.2584
   },
   {
     "regime": "SIMPLES",
@@ -146,8 +146,8 @@
     "inss_ano": 2065.3701333333333,
     "inss_impostos": 0.0,
     "inss_total": 2065.3701333333333,
-    "custo_anual": 27882.4968,
-    "custo_mensal": 2323.5414
+    "custo_mensal": 2323.5414,
+    "custo_anual": 27882.4968
   },
   {
     "regime": "REAL",
@@ -171,8 +171,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "SIMPLES",
@@ -196,8 +196,8 @@
     "inss_ano": 2083.208,
     "inss_impostos": 0.0,
     "inss_total": 2083.208,
-    "custo_anual": 28123.308,
-    "custo_mensal": 2343.609
+    "custo_mensal": 2343.609,
+    "custo_anual": 28123.308
   },
   {
     "regime": "REAL",
@@ -221,8 +221,8 @@
     "inss_ano": 2475.4941333333336,
     "inss_impostos": 688.1873690666667,
     "inss_total": 3163.6815024,
-    "custo_anual": 34107.35816906667,
-    "custo_mensal": 2842.2798474222222
+    "custo_mensal": 2842.2798474222222,
+    "custo_anual": 34107.35816906667
   },
   {
     "regime": "REAL",
@@ -246,8 +246,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "REAL",
@@ -271,8 +271,8 @@
     "inss_ano": 2085.434133333333,
     "inss_impostos": 579.7506890666667,
     "inss_total": 2665.1848224,
-    "custo_anual": 28733.111489066665,
-    "custo_mensal": 2394.425957422222
+    "custo_mensal": 2394.425957422222,
+    "custo_anual": 28733.111489066665
   },
   {
     "regime": "REAL",
@@ -296,8 +296,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "SIMPLES",
@@ -321,8 +321,8 @@
     "inss_ano": 2319.0917333333337,
     "inss_impostos": 0.0,
     "inss_total": 2319.0917333333337,
-    "custo_anual": 31307.7384,
-    "custo_mensal": 2608.9782
+    "custo_mensal": 2608.9782,
+    "custo_anual": 31307.7384
   },
   {
     "regime": "REAL",
@@ -346,8 +346,8 @@
     "inss_ano": 2475.4941333333336,
     "inss_impostos": 688.1873690666667,
     "inss_total": 3163.6815024,
-    "custo_anual": 34107.35816906667,
-    "custo_mensal": 2842.2798474222222
+    "custo_mensal": 2842.2798474222222,
+    "custo_anual": 34107.35816906667
   },
   {
     "regime": "REAL",
@@ -371,8 +371,8 @@
     "inss_ano": 2065.3701333333333,
     "inss_impostos": 574.1728970666667,
     "inss_total": 2639.5430304,
-    "custo_anual": 28456.669697066664,
-    "custo_mensal": 2371.389141422222
+    "custo_mensal": 2371.389141422222,
+    "custo_anual": 28456.669697066664
   },
   {
     "regime": "REAL",
@@ -396,8 +396,8 @@
     "inss_ano": 2279.342133333333,
     "inss_impostos": 633.6571130666666,
     "inss_total": 2912.9992464,
-    "custo_anual": 31404.775913066664,
-    "custo_mensal": 2617.064659422222
+    "custo_mensal": 2617.064659422222,
+    "custo_anual": 31404.775913066664
   },
   {
     "regime": "REAL",
@@ -421,8 +421,8 @@
     "inss_ano": 2065.3701333333333,
     "inss_impostos": 574.1728970666667,
     "inss_total": 2639.5430304,
-    "custo_anual": 28456.669697066664,
-    "custo_mensal": 2371.389141422222
+    "custo_mensal": 2371.389141422222,
+    "custo_anual": 28456.669697066664
   },
   {
     "regime": "REAL",
@@ -446,8 +446,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "REAL",
@@ -471,8 +471,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "REAL",
@@ -496,8 +496,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "SIMPLES",
@@ -521,8 +521,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 0.0,
     "inss_total": 1994.0461333333333,
-    "custo_anual": 26919.6228,
-    "custo_mensal": 2243.3019
+    "custo_mensal": 2243.3019,
+    "custo_anual": 26919.6228
   },
   {
     "regime": "REAL",
@@ -546,8 +546,8 @@
     "inss_ano": 2095.290133333333,
     "inss_impostos": 582.4906570666666,
     "inss_total": 2677.7807904,
-    "custo_anual": 28868.907457066663,
-    "custo_mensal": 2405.7422880888885
+    "custo_mensal": 2405.7422880888885,
+    "custo_anual": 28868.907457066663
   },
   {
     "regime": "SIMPLES",
@@ -571,8 +571,8 @@
     "inss_ano": 2332.339733333333,
     "inss_impostos": 0.0,
     "inss_total": 2332.339733333333,
-    "custo_anual": 31486.5864,
-    "custo_mensal": 2623.8822
+    "custo_mensal": 2623.8822,
+    "custo_anual": 31486.5864
   },
   {
     "regime": "REAL",
@@ -596,8 +596,8 @@
     "inss_ano": 2653.813333333333,
     "inss_impostos": 737.7601066666667,
     "inss_total": 3391.57344,
-    "custo_anual": 36564.24010666666,
-    "custo_mensal": 3047.0200088888887
+    "custo_mensal": 3047.0200088888887,
+    "custo_anual": 36564.24010666666
   },
   {
     "regime": "REAL",
@@ -621,8 +621,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "REAL",
@@ -646,8 +646,8 @@
     "inss_ano": 2124.611733333333,
     "inss_impostos": 590.6420618666667,
     "inss_total": 2715.2537952,
-    "custo_anual": 29272.900461866662,
-    "custo_mensal": 2439.4083718222223
+    "custo_mensal": 2439.4083718222223,
+    "custo_anual": 29272.900461866662
   },
   {
     "regime": "REAL",
@@ -671,8 +671,8 @@
     "inss_ano": 2096.0821333333333,
     "inss_impostos": 582.7108330666667,
     "inss_total": 2678.7929664000003,
-    "custo_anual": 28879.819633066665,
-    "custo_mensal": 2406.6516360888886
+    "custo_mensal": 2406.6516360888886,
+    "custo_anual": 28879.819633066665
   },
   {
     "regime": "REAL",
@@ -696,8 +696,8 @@
     "inss_ano": 2319.0917333333337,
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
-    "custo_anual": 31952.445901866668,
-    "custo_mensal": 2662.7038251555555
+    "custo_mensal": 2662.7038251555555,
+    "custo_anual": 31952.445901866668
   },
   {
     "regime": "REAL",
@@ -721,8 +721,8 @@
     "inss_ano": 2087.370133333333,
     "inss_impostos": 580.2888970666666,
     "inss_total": 2667.659030399999,
-    "custo_anual": 28759.78569706666,
-    "custo_mensal": 2396.6488080888885
+    "custo_mensal": 2396.6488080888885,
+    "custo_anual": 28759.78569706666
   },
   {
     "regime": "SIMPLES",
@@ -746,8 +746,8 @@
     "inss_ano": 2085.434133333333,
     "inss_impostos": 0.0,
     "inss_total": 2085.434133333333,
-    "custo_anual": 28153.3608,
-    "custo_mensal": 2346.1134
+    "custo_mensal": 2346.1134,
+    "custo_anual": 28153.3608
   },
   {
     "regime": "REAL",
@@ -771,8 +771,8 @@
     "inss_ano": 2475.775733333334,
     "inss_impostos": 688.2656538666669,
     "inss_total": 3164.041387200001,
-    "custo_anual": 34111.23805386667,
-    "custo_mensal": 2842.603171155556
+    "custo_mensal": 2842.603171155556,
+    "custo_anual": 34111.23805386667
   },
   {
     "regime": "REAL",
@@ -796,8 +796,8 @@
     "inss_ano": 2653.813333333333,
     "inss_impostos": 737.7601066666667,
     "inss_total": 3391.57344,
-    "custo_anual": 36564.24010666666,
-    "custo_mensal": 3047.0200088888887
+    "custo_mensal": 3047.0200088888887,
+    "custo_anual": 36564.24010666666
   },
   {
     "regime": "REAL",
@@ -821,8 +821,8 @@
     "inss_ano": 2263.7813333333334,
     "inss_impostos": 629.3312106666667,
     "inss_total": 2893.112544,
-    "custo_anual": 31190.379210666662,
-    "custo_mensal": 2599.1982675555555
+    "custo_mensal": 2599.1982675555555,
+    "custo_anual": 31190.379210666662
   },
   {
     "regime": "REAL",
@@ -846,8 +846,8 @@
     "inss_ano": 2319.0917333333337,
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
-    "custo_anual": 31952.445901866668,
-    "custo_mensal": 2662.7038251555555
+    "custo_mensal": 2662.7038251555555,
+    "custo_anual": 31952.445901866668
   },
   {
     "regime": "REAL",
@@ -871,8 +871,8 @@
     "inss_ano": 1994.0461333333333,
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
-    "custo_anual": 27473.967625066663,
-    "custo_mensal": 2289.497302088889
+    "custo_mensal": 2289.497302088889,
+    "custo_anual": 27473.967625066663
   },
   {
     "regime": "REAL",
@@ -896,8 +896,8 @@
     "inss_ano": 2965.3333333333326,
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
-    "custo_anual": 40856.36266666665,
-    "custo_mensal": 3404.696888888888
+    "custo_mensal": 3404.696888888888,
+    "custo_anual": 40856.36266666665
   },
   {
     "regime": "REAL",
@@ -921,8 +921,8 @@
     "inss_ano": 5219.389952000001,
     "inss_impostos": 1450.9904066560005,
     "inss_total": 6670.380358656002,
-    "custo_anual": 71912.75475865601,
-    "custo_mensal": 5992.729563221335
+    "custo_mensal": 5992.729563221335,
+    "custo_anual": 71912.75475865601
   },
   {
     "regime": "REAL",
@@ -946,8 +946,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
-    "custo_anual": 32685.09013333333,
-    "custo_mensal": 2723.757511111111
+    "custo_mensal": 2723.757511111111,
+    "custo_anual": 32685.09013333333
   },
   {
     "regime": "REAL",
@@ -971,8 +971,8 @@
     "inss_ano": 2965.3333333333326,
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
-    "custo_anual": 40856.36266666665,
-    "custo_mensal": 3404.696888888888
+    "custo_mensal": 3404.696888888888,
+    "custo_anual": 40856.36266666665
   },
   {
     "regime": "SIMPLES",
@@ -996,8 +996,8 @@
     "inss_ano": 2616.6338560000004,
     "inss_impostos": 0.0,
     "inss_total": 2616.6338560000004,
-    "custo_anual": 35324.557056000005,
-    "custo_mensal": 2943.7130880000004
+    "custo_mensal": 2943.7130880000004,
+    "custo_anual": 35324.557056000005
   },
   {
     "regime": "SIMPLES",
@@ -1021,8 +1021,8 @@
     "inss_ano": 2135.04,
     "inss_impostos": 0.0,
     "inss_total": 2135.04,
-    "custo_anual": 28823.04,
-    "custo_mensal": 2401.92
+    "custo_mensal": 2401.92,
+    "custo_anual": 28823.04
   },
   {
     "regime": "SIMPLES",
@@ -1046,8 +1046,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 0.0,
     "inss_total": 2372.2666666666664,
-    "custo_anual": 32025.6,
-    "custo_mensal": 2668.8
+    "custo_mensal": 2668.8,
+    "custo_anual": 32025.6
   },
   {
     "regime": "REAL",
@@ -1071,8 +1071,8 @@
     "inss_ano": 4353.643093333333,
     "inss_impostos": 1210.3127799466668,
     "inss_total": 5563.95587328,
-    "custo_anual": 59984.49453994666,
-    "custo_mensal": 4998.707878328888
+    "custo_mensal": 4998.707878328888,
+    "custo_anual": 59984.49453994666
   },
   {
     "regime": "SIMPLES",
@@ -1096,8 +1096,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 0.0,
     "inss_total": 2372.2666666666664,
-    "custo_anual": 32025.6,
-    "custo_mensal": 2668.8
+    "custo_mensal": 2668.8,
+    "custo_anual": 32025.6
   },
   {
     "regime": "REAL",
@@ -1121,8 +1121,8 @@
     "inss_ano": 2583.825408,
     "inss_impostos": 718.3034634240001,
     "inss_total": 3302.1288714240004,
-    "custo_anual": 35599.946471424,
-    "custo_mensal": 2966.662205952
+    "custo_mensal": 2966.662205952,
+    "custo_anual": 35599.946471424
   },
   {
     "regime": "REAL",
@@ -1146,8 +1146,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
-    "custo_anual": 32685.09013333333,
-    "custo_mensal": 2723.757511111111
+    "custo_mensal": 2723.757511111111,
+    "custo_anual": 32685.09013333333
   },
   {
     "regime": "REAL",
@@ -1171,8 +1171,8 @@
     "inss_ano": 3129.0553173333337,
     "inss_impostos": 869.8773782186669,
     "inss_total": 3998.932695552001,
-    "custo_anual": 43112.12416221867,
-    "custo_mensal": 3592.677013518223
+    "custo_mensal": 3592.677013518223,
+    "custo_anual": 43112.12416221867
   },
   {
     "regime": "REAL",
@@ -1196,8 +1196,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
-    "custo_anual": 32685.09013333333,
-    "custo_mensal": 2723.757511111111
+    "custo_mensal": 2723.757511111111,
+    "custo_anual": 32685.09013333333
   },
   {
     "regime": "SIMPLES",
@@ -1221,8 +1221,8 @@
     "inss_ano": 2485.423786666667,
     "inss_impostos": 0.0,
     "inss_total": 2485.423786666667,
-    "custo_anual": 33553.22112000001,
-    "custo_mensal": 2796.101760000001
+    "custo_mensal": 2796.101760000001,
+    "custo_anual": 33553.22112000001
   },
   {
     "regime": "REAL",
@@ -1246,8 +1246,8 @@
     "inss_ano": 2965.3333333333326,
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
-    "custo_anual": 40856.36266666665,
-    "custo_mensal": 3404.696888888888
+    "custo_mensal": 3404.696888888888,
+    "custo_anual": 40856.36266666665
   },
   {
     "regime": "REAL",
@@ -1271,8 +1271,8 @@
     "inss_ano": 4529.202687999999,
     "inss_impostos": 1259.118347264,
     "inss_total": 5788.321035264,
-    "custo_anual": 62403.354635264,
-    "custo_mensal": 5200.279552938667
+    "custo_mensal": 5200.279552938667,
+    "custo_anual": 62403.354635264
   },
   {
     "regime": "REAL",
@@ -1296,8 +1296,8 @@
     "inss_ano": 2965.3333333333326,
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
-    "custo_anual": 40856.36266666665,
-    "custo_mensal": 3404.696888888888
+    "custo_mensal": 3404.696888888888,
+    "custo_anual": 40856.36266666665
   },
   {
     "regime": "REAL",
@@ -1321,8 +1321,8 @@
     "inss_ano": 2502.7413333333334,
     "inss_impostos": 695.7620906666667,
     "inss_total": 3198.503424,
-    "custo_anual": 34482.770090666665,
-    "custo_mensal": 2873.564174222222
+    "custo_mensal": 2873.564174222222,
+    "custo_anual": 34482.770090666665
   },
   {
     "regime": "REAL",
@@ -1346,8 +1346,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
-    "custo_anual": 32685.09013333333,
-    "custo_mensal": 2723.757511111111
+    "custo_mensal": 2723.757511111111,
+    "custo_anual": 32685.09013333333
   },
   {
     "regime": "REAL",
@@ -1371,8 +1371,8 @@
     "inss_ano": 3530.8224,
     "inss_impostos": 981.5686272,
     "inss_total": 4512.3910272,
-    "custo_anual": 48647.6710272,
-    "custo_mensal": 4053.9725856
+    "custo_mensal": 4053.9725856,
+    "custo_anual": 48647.6710272
   },
   {
     "regime": "REAL",
@@ -1396,8 +1396,8 @@
     "inss_ano": 2965.3333333333326,
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
-    "custo_anual": 40856.36266666665,
-    "custo_mensal": 3404.696888888888
+    "custo_mensal": 3404.696888888888,
+    "custo_anual": 40856.36266666665
   },
   {
     "regime": "SIMPLES",
@@ -1421,8 +1421,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 0.0,
     "inss_total": 2372.2666666666664,
-    "custo_anual": 32025.6,
-    "custo_mensal": 2668.8
+    "custo_mensal": 2668.8,
+    "custo_anual": 32025.6
   },
   {
     "regime": "REAL",
@@ -1446,8 +1446,8 @@
     "inss_ano": 2965.3333333333326,
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
-    "custo_anual": 40856.36266666665,
-    "custo_mensal": 3404.696888888888
+    "custo_mensal": 3404.696888888888,
+    "custo_anual": 40856.36266666665
   },
   {
     "regime": "SIMPLES",
@@ -1471,8 +1471,8 @@
     "inss_ano": 2490.88,
     "inss_impostos": 0.0,
     "inss_total": 2490.88,
-    "custo_anual": 33626.88,
-    "custo_mensal": 2802.24
+    "custo_mensal": 2802.24,
+    "custo_anual": 33626.88
   },
   {
     "regime": "REAL",
@@ -1496,8 +1496,8 @@
     "inss_ano": 3109.745066666667,
     "inss_impostos": 864.5091285333334,
     "inss_total": 3974.2541952,
-    "custo_anual": 42846.06752853334,
-    "custo_mensal": 3570.505627377778
+    "custo_mensal": 3570.505627377778,
+    "custo_anual": 42846.06752853334
   },
   {
     "regime": "REAL",
@@ -1521,8 +1521,8 @@
     "inss_ano": 2490.88,
     "inss_impostos": 692.4646400000001,
     "inss_total": 3183.3446400000003,
-    "custo_anual": 34319.34464,
-    "custo_mensal": 2859.9453866666668
+    "custo_mensal": 2859.9453866666668,
+    "custo_anual": 34319.34464
   },
   {
     "regime": "REAL",
@@ -1546,8 +1546,8 @@
     "inss_ano": 2372.2666666666664,
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
-    "custo_anual": 32685.09013333333,
-    "custo_mensal": 2723.757511111111
+    "custo_mensal": 2723.757511111111,
+    "custo_anual": 32685.09013333333
   },
   {
     "regime": "REAL",
@@ -1571,8 +1571,8 @@
     "inss_ano": 5442.643968,
     "inss_impostos": 1513.0550231040002,
     "inss_total": 6955.698991104,
-    "custo_anual": 74988.748591104,
-    "custo_mensal": 6249.062382592
+    "custo_mensal": 6249.062382592,
+    "custo_anual": 74988.748591104
   },
   {
     "regime": "REAL",
@@ -1596,8 +1596,8 @@
     "inss_ano": 2487.796053333333,
     "inss_impostos": 691.6073028266668,
     "inss_total": 3179.4033561600004,
-    "custo_anual": 34276.854022826665,
-    "custo_mensal": 2856.404501902222
+    "custo_mensal": 2856.404501902222,
+    "custo_anual": 34276.854022826665
   },
   {
     "regime": "REAL",
@@ -1621,8 +1621,8 @@
     "inss_ano": 2236.881408,
     "inss_impostos": 621.8530314240002,
     "inss_total": 2858.7344394240004,
-    "custo_anual": 30819.752039424,
-    "custo_mensal": 2568.312669952
+    "custo_mensal": 2568.312669952,
+    "custo_anual": 30819.752039424
   },
   {
     "regime": "SIMPLES",
@@ -1646,8 +1646,8 @@
     "inss_ano": 2502.7413333333334,
     "inss_impostos": 0.0,
     "inss_total": 2502.7413333333334,
-    "custo_anual": 33787.008,
-    "custo_mensal": 2815.5840000000003
+    "custo_mensal": 2815.5840000000003,
+    "custo_anual": 33787.008
   },
   {
     "regime": "REAL",
@@ -1671,8 +1671,8 @@
     "inss_ano": 3113.6000000000004,
     "inss_impostos": 865.5808000000002,
     "inss_total": 3979.180800000001,
-    "custo_anual": 42899.1808,
-    "custo_mensal": 3574.9317333333333
+    "custo_mensal": 3574.9317333333333,
+    "custo_anual": 42899.1808
   },
   {
     "regime": "REAL",
@@ -1696,8 +1696,8 @@
     "inss_ano": 3253.5637333333334,
     "inss_impostos": 904.4907178666668,
     "inss_total": 4158.0544512,
-    "custo_anual": 44827.60111786667,
-    "custo_mensal": 3735.6334264888887
+    "custo_mensal": 3735.6334264888887,
+    "custo_anual": 44827.60111786667
   },
   {
     "regime": "REAL",
@@ -1721,8 +1721,8 @@
     "inss_ano": 1968.9813333333336,
     "inss_impostos": 547.3768106666668,
     "inss_total": 2516.3581440000003,
-    "custo_anual": 27128.624810666668,
-    "custo_mensal": 2260.7187342222223
+    "custo_mensal": 2260.7187342222223,
+    "custo_anual": 27128.624810666668
   },
   {
     "regime": "REAL",
@@ -1746,8 +1746,8 @@
     "inss_ano": 2135.04,
     "inss_impostos": 593.5411200000001,
     "inss_total": 2728.58112,
-    "custo_anual": 29416.58112,
-    "custo_mensal": 2451.38176
+    "custo_mensal": 2451.38176,
+    "custo_anual": 29416.58112
   },
   {
     "regime": "REAL",
@@ -1771,8 +1771,8 @@
     "inss_ano": 2965.3333333333326,
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
-    "custo_anual": 40856.36266666665,
-    "custo_mensal": 3404.696888888888
+    "custo_mensal": 3404.696888888888,
+    "custo_anual": 40856.36266666665
   },
   {
     "regime": "REAL",
@@ -1784,20 +1784,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1876.9,
+    "salario_ano": 20645.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 26848.926666666663,
+    "media_mes": 2237.410555555556,
+    "inss_mes": 178.99284444444444,
+    "inss_ano": 2147.914133333333,
+    "inss_impostos": 597.1201290666667,
+    "inss_total": 2745.0342624,
+    "custo_mensal": 2466.163410755556,
+    "custo_anual": 29593.960929066667
   },
   {
     "regime": "REAL",
@@ -1809,20 +1809,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1876.9,
+    "salario_ano": 20645.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 26848.926666666663,
+    "media_mes": 2237.410555555556,
+    "inss_mes": 178.99284444444444,
+    "inss_ano": 2147.914133333333,
+    "inss_impostos": 597.1201290666667,
+    "inss_total": 2745.0342624,
+    "custo_mensal": 2466.163410755556,
+    "custo_anual": 29593.960929066667
   },
   {
     "regime": "REAL",
@@ -1834,20 +1834,20 @@
     "plano_assist": 0.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1660.0,
-    "salario_ano": 18260.0,
+    "salario_total": 1927.8,
+    "salario_ano": 21205.8,
     "ferias": 2213.333333333333,
     "c_13_salario": 1660.0,
     "fgts": 1770.6666666666663,
     "c_0_4": 708.2666666666667,
-    "total_ano": 24612.266666666663,
-    "media_mes": 2051.0222222222224,
-    "inss_mes": 164.0817777777778,
-    "inss_ano": 1968.9813333333336,
-    "inss_impostos": 547.3768106666668,
-    "inss_total": 2516.3581440000003,
-    "custo_anual": 27128.624810666668,
-    "custo_mensal": 2260.7187342222223
+    "total_ano": 27558.066666666666,
+    "media_mes": 2296.5055555555555,
+    "inss_mes": 183.72044444444444,
+    "inss_ano": 2204.6453333333334,
+    "inss_impostos": 612.8914026666667,
+    "inss_total": 2817.536736,
+    "custo_mensal": 2531.300283555556,
+    "custo_anual": 30375.603402666668
   },
   {
     "regime": "REAL",
@@ -1859,20 +1859,20 @@
     "plano_assist": 35.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 90.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 2006.0,
+    "salario_ano": 22066.0,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 28269.026666666665,
+    "media_mes": 2355.752222222222,
+    "inss_mes": 188.46017777777772,
+    "inss_ano": 2261.522133333333,
+    "inss_impostos": 628.7031530666666,
+    "inss_total": 2890.2252863999997,
+    "custo_mensal": 2596.6043294222222,
+    "custo_anual": 31159.251953066665
   },
   {
     "regime": "SIMPLES",
@@ -1884,20 +1884,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1655.9,
+    "salario_ano": 18214.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
+    "total_ano": 24417.926666666663,
+    "media_mes": 2034.8272222222224,
+    "inss_mes": 162.78617777777777,
+    "inss_ano": 1953.4341333333327,
     "inss_impostos": 0.0,
-    "inss_total": 1922.7221333333327,
-    "custo_anual": 25956.7488,
-    "custo_mensal": 2163.0624
+    "inss_total": 1953.4341333333327,
+    "custo_mensal": 2197.6134,
+    "custo_anual": 26371.3608
   },
   {
     "regime": "SIMPLES",
@@ -1921,8 +1921,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 0.0,
     "inss_total": 1922.7221333333327,
-    "custo_anual": 25956.7488,
-    "custo_mensal": 2163.0624
+    "custo_mensal": 2163.0624,
+    "custo_anual": 25956.7488
   },
   {
     "regime": "REAL",
@@ -1946,8 +1946,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "SIMPLES",
@@ -1971,8 +1971,8 @@
     "inss_ano": 1939.328,
     "inss_impostos": 0.0,
     "inss_total": 1939.328,
-    "custo_anual": 26180.928,
-    "custo_mensal": 2181.744
+    "custo_mensal": 2181.744,
+    "custo_anual": 26180.928
   },
   {
     "regime": "REAL",
@@ -1984,20 +1984,20 @@
     "plano_assist": 35.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 90.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 2006.0,
+    "salario_ano": 22066.0,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 28269.026666666665,
+    "media_mes": 2355.752222222222,
+    "inss_mes": 188.46017777777772,
+    "inss_ano": 2261.522133333333,
+    "inss_impostos": 628.7031530666666,
+    "inss_total": 2890.2252863999997,
+    "custo_mensal": 2596.6043294222222,
+    "custo_anual": 31159.251953066665
   },
   {
     "regime": "REAL",
@@ -2021,8 +2021,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "REAL",
@@ -2034,20 +2034,20 @@
     "plano_assist": 0.0,
     "plano_odont": 14.7,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1635.7,
+    "salario_ano": 17992.7,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 24195.726666666666,
+    "media_mes": 2016.3105555555555,
+    "inss_mes": 161.30484444444446,
+    "inss_ano": 1935.6581333333331,
+    "inss_impostos": 538.1129610666667,
+    "inss_total": 2473.7710944,
+    "custo_mensal": 2222.4581467555554,
+    "custo_anual": 26669.497761066665
   },
   {
     "regime": "REAL",
@@ -2071,8 +2071,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "SIMPLES",
@@ -2084,20 +2084,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1876.9,
+    "salario_ano": 20645.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
+    "total_ano": 26848.926666666663,
+    "media_mes": 2237.410555555556,
+    "inss_mes": 178.99284444444444,
+    "inss_ano": 2147.914133333333,
     "inss_impostos": 0.0,
-    "inss_total": 1922.7221333333327,
-    "custo_anual": 25956.7488,
-    "custo_mensal": 2163.0624
+    "inss_total": 2147.914133333333,
+    "custo_mensal": 2416.4034,
+    "custo_anual": 28996.8408
   },
   {
     "regime": "REAL",
@@ -2109,20 +2109,20 @@
     "plano_assist": 35.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 90.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 2006.0,
+    "salario_ano": 22066.0,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 28269.026666666665,
+    "media_mes": 2355.752222222222,
+    "inss_mes": 188.46017777777772,
+    "inss_ano": 2261.522133333333,
+    "inss_impostos": 628.7031530666666,
+    "inss_total": 2890.2252863999997,
+    "custo_mensal": 2596.6043294222222,
+    "custo_anual": 31159.251953066665
   },
   {
     "regime": "REAL",
@@ -2146,8 +2146,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "REAL",
@@ -2171,8 +2171,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "REAL",
@@ -2196,8 +2196,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "REAL",
@@ -2221,8 +2221,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "REAL",
@@ -2246,8 +2246,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "REAL",
@@ -2271,8 +2271,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "SIMPLES",
@@ -2296,8 +2296,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 0.0,
     "inss_total": 1922.7221333333327,
-    "custo_anual": 25956.7488,
-    "custo_mensal": 2163.0624
+    "custo_mensal": 2163.0624,
+    "custo_anual": 25956.7488
   },
   {
     "regime": "REAL",
@@ -2309,20 +2309,20 @@
     "plano_assist": 34.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1655.0,
+    "salario_ano": 18205.0,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 24408.026666666665,
+    "media_mes": 2034.002222222222,
+    "inss_mes": 162.72017777777776,
+    "inss_ano": 1952.6421333333333,
+    "inss_impostos": 542.8345130666667,
+    "inss_total": 2495.4766464,
+    "custo_mensal": 2241.958609422222,
+    "custo_anual": 26903.503313066663
   },
   {
     "regime": "SIMPLES",
@@ -2334,20 +2334,20 @@
     "plano_assist": 0.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 286.0,
-    "salario_total": 1633.0,
-    "salario_ano": 17963.0,
+    "salario_total": 1919.0,
+    "salario_ano": 21109.0,
     "ferias": 2177.333333333333,
     "c_13_salario": 1633.0,
     "fgts": 1741.8666666666666,
     "c_0_4": 696.7466666666667,
-    "total_ano": 24211.946666666663,
-    "media_mes": 2017.662222222222,
-    "inss_mes": 161.41297777777777,
-    "inss_ano": 1936.9557333333328,
+    "total_ano": 27357.946666666663,
+    "media_mes": 2279.8288888888887,
+    "inss_mes": 182.3863111111111,
+    "inss_ano": 2188.635733333333,
     "inss_impostos": 0.0,
-    "inss_total": 1936.9557333333328,
-    "custo_anual": 26148.902399999995,
-    "custo_mensal": 2179.0752
+    "inss_total": 2188.635733333333,
+    "custo_mensal": 2462.2152,
+    "custo_anual": 29546.5824
   },
   {
     "regime": "REAL",
@@ -2359,20 +2359,20 @@
     "plano_assist": 0.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 312.0,
-    "salario_total": 1675.0,
-    "salario_ano": 18425.0,
+    "salario_total": 2299.0,
+    "salario_ano": 25289.0,
     "ferias": 2233.333333333333,
     "c_13_salario": 1675.0,
     "fgts": 1786.6666666666663,
     "c_0_4": 714.6666666666666,
-    "total_ano": 24834.666666666668,
-    "media_mes": 2069.555555555556,
-    "inss_mes": 165.56444444444446,
-    "inss_ano": 1986.7733333333333,
-    "inss_impostos": 552.3229866666668,
-    "inss_total": 2539.096320000001,
-    "custo_anual": 27373.76298666667,
-    "custo_mensal": 2281.146915555556
+    "total_ano": 31698.666666666668,
+    "media_mes": 2641.555555555556,
+    "inss_mes": 211.32444444444445,
+    "inss_ano": 2535.893333333333,
+    "inss_impostos": 704.9783466666668,
+    "inss_total": 3240.87168,
+    "custo_mensal": 2911.6281955555555,
+    "custo_anual": 34939.53834666667
   },
   {
     "regime": "REAL",
@@ -2396,8 +2396,8 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   },
   {
     "regime": "REAL",
@@ -2409,20 +2409,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1655.9,
+    "salario_ano": 18214.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 24417.926666666663,
+    "media_mes": 2034.8272222222224,
+    "inss_mes": 162.78617777777777,
+    "inss_ano": 1953.4341333333327,
+    "inss_impostos": 543.0546890666667,
+    "inss_total": 2496.4888224,
+    "custo_mensal": 2242.867957422222,
+    "custo_anual": 26914.415489066665
   },
   {
     "regime": "REAL",
@@ -2434,20 +2434,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1655.9,
+    "salario_ano": 18214.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 24417.926666666663,
+    "media_mes": 2034.8272222222224,
+    "inss_mes": 162.78617777777777,
+    "inss_ano": 1953.4341333333327,
+    "inss_impostos": 543.0546890666667,
+    "inss_total": 2496.4888224,
+    "custo_mensal": 2242.867957422222,
+    "custo_anual": 26914.415489066665
   },
   {
     "regime": "REAL",
@@ -2459,20 +2459,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1876.9,
+    "salario_ano": 20645.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 26848.926666666663,
+    "media_mes": 2237.410555555556,
+    "inss_mes": 178.99284444444444,
+    "inss_ano": 2147.914133333333,
+    "inss_impostos": 597.1201290666667,
+    "inss_total": 2745.0342624,
+    "custo_mensal": 2466.163410755556,
+    "custo_anual": 29593.960929066667
   },
   {
     "regime": "REAL",
@@ -2484,20 +2484,20 @@
     "plano_assist": 25.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1646.0,
+    "salario_ano": 18106.0,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 24309.026666666665,
+    "media_mes": 2025.752222222222,
+    "inss_mes": 162.06017777777777,
+    "inss_ano": 1944.7221333333327,
+    "inss_impostos": 540.6327530666666,
+    "inss_total": 2485.3548864,
+    "custo_mensal": 2232.8651294222223,
+    "custo_anual": 26794.381553066665
   },
   {
     "regime": "SIMPLES",
@@ -2509,20 +2509,20 @@
     "plano_assist": 0.0,
     "plano_odont": 14.7,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1635.7,
+    "salario_ano": 17992.7,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
+    "total_ano": 24195.726666666666,
+    "media_mes": 2016.3105555555555,
+    "inss_mes": 161.30484444444446,
+    "inss_ano": 1935.6581333333331,
     "inss_impostos": 0.0,
-    "inss_total": 1922.7221333333327,
-    "custo_anual": 25956.7488,
-    "custo_mensal": 2163.0624
+    "inss_total": 1935.6581333333331,
+    "custo_mensal": 2177.6154,
+    "custo_anual": 26131.3848
   },
   {
     "regime": "REAL",
@@ -2534,20 +2534,20 @@
     "plano_assist": 0.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 273.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 2136.0,
+    "salario_ano": 23496.0,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 29699.026666666665,
+    "media_mes": 2474.918888888889,
+    "inss_mes": 197.9935111111111,
+    "inss_ano": 2375.922133333333,
+    "inss_impostos": 660.5063530666667,
+    "inss_total": 3036.4284864,
+    "custo_mensal": 2727.9545960888886,
+    "custo_anual": 32735.455153066665
   },
   {
     "regime": "REAL",
@@ -2559,20 +2559,20 @@
     "plano_assist": 0.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 312.0,
-    "salario_total": 1675.0,
-    "salario_ano": 18425.0,
+    "salario_total": 2299.0,
+    "salario_ano": 25289.0,
     "ferias": 2233.333333333333,
     "c_13_salario": 1675.0,
     "fgts": 1786.6666666666663,
     "c_0_4": 714.6666666666666,
-    "total_ano": 24834.666666666668,
-    "media_mes": 2069.555555555556,
-    "inss_mes": 165.56444444444446,
-    "inss_ano": 1986.7733333333333,
-    "inss_impostos": 552.3229866666668,
-    "inss_total": 2539.096320000001,
-    "custo_anual": 27373.76298666667,
-    "custo_mensal": 2281.146915555556
+    "total_ano": 31698.666666666668,
+    "media_mes": 2641.555555555556,
+    "inss_mes": 211.32444444444445,
+    "inss_ano": 2535.893333333333,
+    "inss_impostos": 704.9783466666668,
+    "inss_total": 3240.87168,
+    "custo_mensal": 2911.6281955555555,
+    "custo_anual": 34939.53834666667
   },
   {
     "regime": "REAL",
@@ -2584,20 +2584,20 @@
     "plano_assist": 0.0,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1660.0,
-    "salario_ano": 18260.0,
+    "salario_total": 1912.0,
+    "salario_ano": 21032.0,
     "ferias": 2213.333333333333,
     "c_13_salario": 1660.0,
     "fgts": 1770.6666666666663,
     "c_0_4": 708.2666666666667,
-    "total_ano": 24612.266666666663,
-    "media_mes": 2051.0222222222224,
-    "inss_mes": 164.0817777777778,
-    "inss_ano": 1968.9813333333336,
-    "inss_impostos": 547.3768106666668,
-    "inss_total": 2516.3581440000003,
-    "custo_anual": 27128.624810666668,
-    "custo_mensal": 2260.7187342222223
+    "total_ano": 27384.266666666663,
+    "media_mes": 2282.0222222222224,
+    "inss_mes": 182.5617777777778,
+    "inss_ano": 2190.7413333333334,
+    "inss_impostos": 609.0260906666667,
+    "inss_total": 2799.767424,
+    "custo_mensal": 2515.3361742222223,
+    "custo_anual": 30184.034090666668
   },
   {
     "regime": "REAL",
@@ -2609,20 +2609,20 @@
     "plano_assist": 34.9,
     "plano_odont": 0.0,
     "vale_alimentacao": 0.0,
-    "salario_total": 1621.0,
-    "salario_ano": 17831.0,
+    "salario_total": 1876.9,
+    "salario_ano": 20645.9,
     "ferias": 2161.333333333333,
     "c_13_salario": 1621.0,
     "fgts": 1729.0666666666666,
     "c_0_4": 691.6266666666667,
-    "total_ano": 24034.026666666665,
-    "media_mes": 2002.8355555555556,
-    "inss_mes": 160.22684444444442,
-    "inss_ano": 1922.7221333333327,
-    "inss_impostos": 534.5167530666666,
-    "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "total_ano": 26848.926666666663,
+    "media_mes": 2237.410555555556,
+    "inss_mes": 178.99284444444444,
+    "inss_ano": 2147.914133333333,
+    "inss_impostos": 597.1201290666667,
+    "inss_total": 2745.0342624,
+    "custo_mensal": 2466.163410755556,
+    "custo_anual": 29593.960929066667
   },
   {
     "regime": "REAL",
@@ -2646,7 +2646,7 @@
     "inss_ano": 1922.7221333333327,
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
-    "custo_anual": 26491.265553066663,
-    "custo_mensal": 2207.6054627555554
+    "custo_mensal": 2207.6054627555554,
+    "custo_anual": 26491.265553066663
   }
 ]
