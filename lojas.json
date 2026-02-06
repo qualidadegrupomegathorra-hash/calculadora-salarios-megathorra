@@ -22,7 +22,9 @@
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
     "custo_mensal": 2662.7038251555555,
-    "custo_anual": 31952.445901866668
+    "custo_anual": 31952.445901866668,
+    "quebra_de_cx_pct": 0.12000000000000001,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -47,7 +49,9 @@
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
     "custo_mensal": 2662.7038251555555,
-    "custo_anual": 31952.445901866668
+    "custo_anual": 31952.445901866668,
+    "quebra_de_cx_pct": 0.12000000000000001,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -72,7 +76,9 @@
     "inss_impostos": 633.1965226666667,
     "inss_total": 2910.881856,
     "custo_mensal": 2615.162376888889,
-    "custo_anual": 31381.948522666666
+    "custo_anual": 31381.948522666666,
+    "quebra_de_cx_pct": 0.05,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -97,7 +103,9 @@
     "inss_impostos": 688.1873690666667,
     "inss_total": 3163.6815024,
     "custo_mensal": 2842.2798474222222,
-    "custo_anual": 34107.35816906667
+    "custo_anual": 34107.35816906667,
+    "quebra_de_cx_pct": 0.15,
+    "plano_assist_pct": 0.0215916101172116
   },
   {
     "regime": "SIMPLES",
@@ -122,7 +130,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2124.611733333333,
     "custo_mensal": 2390.1882,
-    "custo_anual": 28682.2584
+    "custo_anual": 28682.2584,
+    "quebra_de_cx_pct": 0.12000000000000001,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "SIMPLES",
@@ -147,7 +157,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2065.3701333333333,
     "custo_mensal": 2323.5414,
-    "custo_anual": 27882.4968
+    "custo_anual": 27882.4968,
+    "quebra_de_cx_pct": 0.09999999999999999,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -172,7 +184,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -197,7 +211,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2083.208,
     "custo_mensal": 2343.609,
-    "custo_anual": 28123.308
+    "custo_anual": 28123.308,
+    "quebra_de_cx_pct": 0.1,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -222,7 +238,9 @@
     "inss_impostos": 688.1873690666667,
     "inss_total": 3163.6815024,
     "custo_mensal": 2842.2798474222222,
-    "custo_anual": 34107.35816906667
+    "custo_anual": 34107.35816906667,
+    "quebra_de_cx_pct": 0.15,
+    "plano_assist_pct": 0.0215916101172116
   },
   {
     "regime": "REAL",
@@ -247,7 +265,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -272,7 +292,9 @@
     "inss_impostos": 579.7506890666667,
     "inss_total": 2665.1848224,
     "custo_mensal": 2394.425957422222,
-    "custo_anual": 28733.111489066665
+    "custo_anual": 28733.111489066665,
+    "quebra_de_cx_pct": 0.10499691548426897,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -297,7 +319,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -322,7 +346,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2319.0917333333337,
     "custo_mensal": 2608.9782,
-    "custo_anual": 31307.7384
+    "custo_anual": 31307.7384,
+    "quebra_de_cx_pct": 0.12000000000000001,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -347,7 +373,9 @@
     "inss_impostos": 688.1873690666667,
     "inss_total": 3163.6815024,
     "custo_mensal": 2842.2798474222222,
-    "custo_anual": 34107.35816906667
+    "custo_anual": 34107.35816906667,
+    "quebra_de_cx_pct": 0.15,
+    "plano_assist_pct": 0.0215916101172116
   },
   {
     "regime": "REAL",
@@ -372,7 +400,9 @@
     "inss_impostos": 574.1728970666667,
     "inss_total": 2639.5430304,
     "custo_mensal": 2371.389141422222,
-    "custo_anual": 28456.669697066664
+    "custo_anual": 28456.669697066664,
+    "quebra_de_cx_pct": 0.09999999999999999,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -397,7 +427,9 @@
     "inss_impostos": 633.6571130666666,
     "inss_total": 2912.9992464,
     "custo_mensal": 2617.064659422222,
-    "custo_anual": 31404.775913066664
+    "custo_anual": 31404.775913066664,
+    "quebra_de_cx_pct": 0.25,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -422,7 +454,9 @@
     "inss_impostos": 574.1728970666667,
     "inss_total": 2639.5430304,
     "custo_mensal": 2371.389141422222,
-    "custo_anual": 28456.669697066664
+    "custo_anual": 28456.669697066664,
+    "quebra_de_cx_pct": 0.09999999999999999,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -447,7 +481,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -472,7 +508,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -497,7 +535,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -522,7 +562,9 @@
     "inss_impostos": 0.0,
     "inss_total": 1994.0461333333333,
     "custo_mensal": 2243.3019,
-    "custo_anual": 26919.6228
+    "custo_anual": 26919.6228,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -547,7 +589,9 @@
     "inss_impostos": 582.4906570666666,
     "inss_total": 2677.7807904,
     "custo_mensal": 2405.7422880888885,
-    "custo_anual": 28868.907457066663
+    "custo_anual": 28868.907457066663,
+    "quebra_de_cx_pct": 0.09999999999999999,
+    "plano_assist_pct": 0.020974706971005553
   },
   {
     "regime": "SIMPLES",
@@ -572,7 +616,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2332.339733333333,
     "custo_mensal": 2623.8822,
-    "custo_anual": 31486.5864
+    "custo_anual": 31486.5864,
+    "quebra_de_cx_pct": 0.1,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -597,7 +643,9 @@
     "inss_impostos": 737.7601066666667,
     "inss_total": 3391.57344,
     "custo_mensal": 3047.0200088888887,
-    "custo_anual": 36564.24010666666
+    "custo_anual": 36564.24010666666,
+    "quebra_de_cx_pct": 0.08,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -622,7 +670,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.049999999999999996,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -647,7 +697,9 @@
     "inss_impostos": 590.6420618666667,
     "inss_total": 2715.2537952,
     "custo_mensal": 2439.4083718222223,
-    "custo_anual": 29272.900461866662
+    "custo_anual": 29272.900461866662,
+    "quebra_de_cx_pct": 0.12000000000000001,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -672,7 +724,9 @@
     "inss_impostos": 582.7108330666667,
     "inss_total": 2678.7929664000003,
     "custo_mensal": 2406.6516360888886,
-    "custo_anual": 28879.819633066665
+    "custo_anual": 28879.819633066665,
+    "quebra_de_cx_pct": 0.09999999999999999,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -697,7 +751,9 @@
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
     "custo_mensal": 2662.7038251555555,
-    "custo_anual": 31952.445901866668
+    "custo_anual": 31952.445901866668,
+    "quebra_de_cx_pct": 0.12000000000000001,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -722,7 +778,9 @@
     "inss_impostos": 580.2888970666666,
     "inss_total": 2667.659030399999,
     "custo_mensal": 2396.6488080888885,
-    "custo_anual": 28759.78569706666
+    "custo_anual": 28759.78569706666,
+    "quebra_de_cx_pct": 0.09999999999999999,
+    "plano_assist_pct": 0.015422578655151141
   },
   {
     "regime": "SIMPLES",
@@ -747,7 +805,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2085.434133333333,
     "custo_mensal": 2346.1134,
-    "custo_anual": 28153.3608
+    "custo_anual": 28153.3608,
+    "quebra_de_cx_pct": 0.10499691548426897,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -772,7 +832,9 @@
     "inss_impostos": 688.2656538666669,
     "inss_total": 3164.041387200001,
     "custo_mensal": 2842.603171155556,
-    "custo_anual": 34111.23805386667
+    "custo_anual": 34111.23805386667,
+    "quebra_de_cx_pct": 0.06999999999999999,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -797,7 +859,9 @@
     "inss_impostos": 737.7601066666667,
     "inss_total": 3391.57344,
     "custo_mensal": 3047.0200088888887,
-    "custo_anual": 36564.24010666666
+    "custo_anual": 36564.24010666666,
+    "quebra_de_cx_pct": 0.08,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -822,7 +886,9 @@
     "inss_impostos": 629.3312106666667,
     "inss_total": 2893.112544,
     "custo_mensal": 2599.1982675555555,
-    "custo_anual": 31190.379210666662
+    "custo_anual": 31190.379210666662,
+    "quebra_de_cx_pct": 0.05,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -847,7 +913,9 @@
     "inss_impostos": 644.7075018666668,
     "inss_total": 2963.799235200001,
     "custo_mensal": 2662.7038251555555,
-    "custo_anual": 31952.445901866668
+    "custo_anual": 31952.445901866668,
+    "quebra_de_cx_pct": 0.12000000000000001,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -872,7 +940,9 @@
     "inss_impostos": 554.3448250666667,
     "inss_total": 2548.3909584,
     "custo_mensal": 2289.497302088889,
-    "custo_anual": 27473.967625066663
+    "custo_anual": 27473.967625066663,
+    "quebra_de_cx_pct": 0.05000000000000001,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -897,7 +967,9 @@
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
     "custo_mensal": 3404.696888888888,
-    "custo_anual": 40856.36266666665
+    "custo_anual": 40856.36266666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -922,7 +994,9 @@
     "inss_impostos": 1450.9904066560005,
     "inss_total": 6670.380358656002,
     "custo_mensal": 5992.729563221335,
-    "custo_anual": 71912.75475865601
+    "custo_anual": 71912.75475865601,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -947,7 +1021,9 @@
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
     "custo_mensal": 2723.757511111111,
-    "custo_anual": 32685.09013333333
+    "custo_anual": 32685.09013333333,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -972,7 +1048,9 @@
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
     "custo_mensal": 3404.696888888888,
-    "custo_anual": 40856.36266666665
+    "custo_anual": 40856.36266666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -997,7 +1075,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2616.6338560000004,
     "custo_mensal": 2943.7130880000004,
-    "custo_anual": 35324.557056000005
+    "custo_anual": 35324.557056000005,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1022,7 +1102,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2135.04,
     "custo_mensal": 2401.92,
-    "custo_anual": 28823.04
+    "custo_anual": 28823.04,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1047,7 +1129,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2372.2666666666664,
     "custo_mensal": 2668.8,
-    "custo_anual": 32025.6
+    "custo_anual": 32025.6,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1072,7 +1156,9 @@
     "inss_impostos": 1210.3127799466668,
     "inss_total": 5563.95587328,
     "custo_mensal": 4998.707878328888,
-    "custo_anual": 59984.49453994666
+    "custo_anual": 59984.49453994666,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1097,7 +1183,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2372.2666666666664,
     "custo_mensal": 2668.8,
-    "custo_anual": 32025.6
+    "custo_anual": 32025.6,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1122,7 +1210,9 @@
     "inss_impostos": 718.3034634240001,
     "inss_total": 3302.1288714240004,
     "custo_mensal": 2966.662205952,
-    "custo_anual": 35599.946471424
+    "custo_anual": 35599.946471424,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1147,7 +1237,9 @@
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
     "custo_mensal": 2723.757511111111,
-    "custo_anual": 32685.09013333333
+    "custo_anual": 32685.09013333333,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1172,7 +1264,9 @@
     "inss_impostos": 869.8773782186669,
     "inss_total": 3998.932695552001,
     "custo_mensal": 3592.677013518223,
-    "custo_anual": 43112.12416221867
+    "custo_anual": 43112.12416221867,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1197,7 +1291,9 @@
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
     "custo_mensal": 2723.757511111111,
-    "custo_anual": 32685.09013333333
+    "custo_anual": 32685.09013333333,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1222,7 +1318,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2485.423786666667,
     "custo_mensal": 2796.101760000001,
-    "custo_anual": 33553.22112000001
+    "custo_anual": 33553.22112000001,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1247,7 +1345,9 @@
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
     "custo_mensal": 3404.696888888888,
-    "custo_anual": 40856.36266666665
+    "custo_anual": 40856.36266666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1272,7 +1372,9 @@
     "inss_impostos": 1259.118347264,
     "inss_total": 5788.321035264,
     "custo_mensal": 5200.279552938667,
-    "custo_anual": 62403.354635264
+    "custo_anual": 62403.354635264,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1297,7 +1399,9 @@
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
     "custo_mensal": 3404.696888888888,
-    "custo_anual": 40856.36266666665
+    "custo_anual": 40856.36266666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1322,7 +1426,9 @@
     "inss_impostos": 695.7620906666667,
     "inss_total": 3198.503424,
     "custo_mensal": 2873.564174222222,
-    "custo_anual": 34482.770090666665
+    "custo_anual": 34482.770090666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1347,7 +1453,9 @@
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
     "custo_mensal": 2723.757511111111,
-    "custo_anual": 32685.09013333333
+    "custo_anual": 32685.09013333333,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1372,7 +1480,9 @@
     "inss_impostos": 981.5686272,
     "inss_total": 4512.3910272,
     "custo_mensal": 4053.9725856,
-    "custo_anual": 48647.6710272
+    "custo_anual": 48647.6710272,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1397,7 +1507,9 @@
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
     "custo_mensal": 3404.696888888888,
-    "custo_anual": 40856.36266666665
+    "custo_anual": 40856.36266666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1422,7 +1534,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2372.2666666666664,
     "custo_mensal": 2668.8,
-    "custo_anual": 32025.6
+    "custo_anual": 32025.6,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1447,7 +1561,9 @@
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
     "custo_mensal": 3404.696888888888,
-    "custo_anual": 40856.36266666665
+    "custo_anual": 40856.36266666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1472,7 +1588,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2490.88,
     "custo_mensal": 2802.24,
-    "custo_anual": 33626.88
+    "custo_anual": 33626.88,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1497,7 +1615,9 @@
     "inss_impostos": 864.5091285333334,
     "inss_total": 3974.2541952,
     "custo_mensal": 3570.505627377778,
-    "custo_anual": 42846.06752853334
+    "custo_anual": 42846.06752853334,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1522,7 +1642,9 @@
     "inss_impostos": 692.4646400000001,
     "inss_total": 3183.3446400000003,
     "custo_mensal": 2859.9453866666668,
-    "custo_anual": 34319.34464
+    "custo_anual": 34319.34464,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1547,7 +1669,9 @@
     "inss_impostos": 659.4901333333333,
     "inss_total": 3031.7568,
     "custo_mensal": 2723.757511111111,
-    "custo_anual": 32685.09013333333
+    "custo_anual": 32685.09013333333,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1572,7 +1696,9 @@
     "inss_impostos": 1513.0550231040002,
     "inss_total": 6955.698991104,
     "custo_mensal": 6249.062382592,
-    "custo_anual": 74988.748591104
+    "custo_anual": 74988.748591104,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1597,7 +1723,9 @@
     "inss_impostos": 691.6073028266668,
     "inss_total": 3179.4033561600004,
     "custo_mensal": 2856.404501902222,
-    "custo_anual": 34276.854022826665
+    "custo_anual": 34276.854022826665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1622,7 +1750,9 @@
     "inss_impostos": 621.8530314240002,
     "inss_total": 2858.7344394240004,
     "custo_mensal": 2568.312669952,
-    "custo_anual": 30819.752039424
+    "custo_anual": 30819.752039424,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1647,7 +1777,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2502.7413333333334,
     "custo_mensal": 2815.5840000000003,
-    "custo_anual": 33787.008
+    "custo_anual": 33787.008,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1672,7 +1804,9 @@
     "inss_impostos": 865.5808000000002,
     "inss_total": 3979.180800000001,
     "custo_mensal": 3574.9317333333333,
-    "custo_anual": 42899.1808
+    "custo_anual": 42899.1808,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1697,7 +1831,9 @@
     "inss_impostos": 904.4907178666668,
     "inss_total": 4158.0544512,
     "custo_mensal": 3735.6334264888887,
-    "custo_anual": 44827.60111786667
+    "custo_anual": 44827.60111786667,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1722,7 +1858,9 @@
     "inss_impostos": 547.3768106666668,
     "inss_total": 2516.3581440000003,
     "custo_mensal": 2260.7187342222223,
-    "custo_anual": 27128.624810666668
+    "custo_anual": 27128.624810666668,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1747,7 +1885,9 @@
     "inss_impostos": 593.5411200000001,
     "inss_total": 2728.58112,
     "custo_mensal": 2451.38176,
-    "custo_anual": 29416.58112
+    "custo_anual": 29416.58112,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1772,7 +1912,9 @@
     "inss_impostos": 824.3626666666665,
     "inss_total": 3789.695999999999,
     "custo_mensal": 3404.696888888888,
-    "custo_anual": 40856.36266666665
+    "custo_anual": 40856.36266666665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1797,7 +1939,9 @@
     "inss_impostos": 597.1201290666667,
     "inss_total": 2745.0342624,
     "custo_mensal": 2466.163410755556,
-    "custo_anual": 29593.960929066667
+    "custo_anual": 29593.960929066667,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -1822,7 +1966,9 @@
     "inss_impostos": 597.1201290666667,
     "inss_total": 2745.0342624,
     "custo_mensal": 2466.163410755556,
-    "custo_anual": 29593.960929066667
+    "custo_anual": 29593.960929066667,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -1847,7 +1993,9 @@
     "inss_impostos": 612.8914026666667,
     "inss_total": 2817.536736,
     "custo_mensal": 2531.300283555556,
-    "custo_anual": 30375.603402666668
+    "custo_anual": 30375.603402666668,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1872,7 +2020,9 @@
     "inss_impostos": 628.7031530666666,
     "inss_total": 2890.2252863999997,
     "custo_mensal": 2596.6043294222222,
-    "custo_anual": 31159.251953066665
+    "custo_anual": 31159.251953066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0215916101172116
   },
   {
     "regime": "SIMPLES",
@@ -1897,7 +2047,9 @@
     "inss_impostos": 0.0,
     "inss_total": 1953.4341333333327,
     "custo_mensal": 2197.6134,
-    "custo_anual": 26371.3608
+    "custo_anual": 26371.3608,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "SIMPLES",
@@ -1922,7 +2074,9 @@
     "inss_impostos": 0.0,
     "inss_total": 1922.7221333333327,
     "custo_mensal": 2163.0624,
-    "custo_anual": 25956.7488
+    "custo_anual": 25956.7488,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1947,7 +2101,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -1972,7 +2128,9 @@
     "inss_impostos": 0.0,
     "inss_total": 1939.328,
     "custo_mensal": 2181.744,
-    "custo_anual": 26180.928
+    "custo_anual": 26180.928,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -1997,7 +2155,9 @@
     "inss_impostos": 628.7031530666666,
     "inss_total": 2890.2252863999997,
     "custo_mensal": 2596.6043294222222,
-    "custo_anual": 31159.251953066665
+    "custo_anual": 31159.251953066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0215916101172116
   },
   {
     "regime": "REAL",
@@ -2022,7 +2182,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2047,7 +2209,9 @@
     "inss_impostos": 538.1129610666667,
     "inss_total": 2473.7710944,
     "custo_mensal": 2222.4581467555554,
-    "custo_anual": 26669.497761066665
+    "custo_anual": 26669.497761066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2072,7 +2236,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -2097,7 +2263,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2147.914133333333,
     "custo_mensal": 2416.4034,
-    "custo_anual": 28996.8408
+    "custo_anual": 28996.8408,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -2122,7 +2290,9 @@
     "inss_impostos": 628.7031530666666,
     "inss_total": 2890.2252863999997,
     "custo_mensal": 2596.6043294222222,
-    "custo_anual": 31159.251953066665
+    "custo_anual": 31159.251953066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0215916101172116
   },
   {
     "regime": "REAL",
@@ -2147,7 +2317,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2172,7 +2344,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2197,7 +2371,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2222,7 +2398,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2247,7 +2425,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2272,7 +2452,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "SIMPLES",
@@ -2297,7 +2479,9 @@
     "inss_impostos": 0.0,
     "inss_total": 1922.7221333333327,
     "custo_mensal": 2163.0624,
-    "custo_anual": 25956.7488
+    "custo_anual": 25956.7488,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2322,7 +2506,9 @@
     "inss_impostos": 542.8345130666667,
     "inss_total": 2495.4766464,
     "custo_mensal": 2241.958609422222,
-    "custo_anual": 26903.503313066663
+    "custo_anual": 26903.503313066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.020974706971005553
   },
   {
     "regime": "SIMPLES",
@@ -2347,7 +2533,9 @@
     "inss_impostos": 0.0,
     "inss_total": 2188.635733333333,
     "custo_mensal": 2462.2152,
-    "custo_anual": 29546.5824
+    "custo_anual": 29546.5824,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2372,7 +2560,9 @@
     "inss_impostos": 704.9783466666668,
     "inss_total": 3240.87168,
     "custo_mensal": 2911.6281955555555,
-    "custo_anual": 34939.53834666667
+    "custo_anual": 34939.53834666667,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2397,7 +2587,9 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2422,7 +2614,9 @@
     "inss_impostos": 543.0546890666667,
     "inss_total": 2496.4888224,
     "custo_mensal": 2242.867957422222,
-    "custo_anual": 26914.415489066665
+    "custo_anual": 26914.415489066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -2447,7 +2641,9 @@
     "inss_impostos": 543.0546890666667,
     "inss_total": 2496.4888224,
     "custo_mensal": 2242.867957422222,
-    "custo_anual": 26914.415489066665
+    "custo_anual": 26914.415489066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -2472,7 +2668,9 @@
     "inss_impostos": 597.1201290666667,
     "inss_total": 2745.0342624,
     "custo_mensal": 2466.163410755556,
-    "custo_anual": 29593.960929066667
+    "custo_anual": 29593.960929066667,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -2497,7 +2695,9 @@
     "inss_impostos": 540.6327530666666,
     "inss_total": 2485.3548864,
     "custo_mensal": 2232.8651294222223,
-    "custo_anual": 26794.381553066665
+    "custo_anual": 26794.381553066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.015422578655151141
   },
   {
     "regime": "SIMPLES",
@@ -2522,7 +2722,9 @@
     "inss_impostos": 0.0,
     "inss_total": 1935.6581333333331,
     "custo_mensal": 2177.6154,
-    "custo_anual": 26131.3848
+    "custo_anual": 26131.3848,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2547,7 +2749,9 @@
     "inss_impostos": 660.5063530666667,
     "inss_total": 3036.4284864,
     "custo_mensal": 2727.9545960888886,
-    "custo_anual": 32735.455153066665
+    "custo_anual": 32735.455153066665,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2572,7 +2776,9 @@
     "inss_impostos": 704.9783466666668,
     "inss_total": 3240.87168,
     "custo_mensal": 2911.6281955555555,
-    "custo_anual": 34939.53834666667
+    "custo_anual": 34939.53834666667,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2597,7 +2803,9 @@
     "inss_impostos": 609.0260906666667,
     "inss_total": 2799.767424,
     "custo_mensal": 2515.3361742222223,
-    "custo_anual": 30184.034090666668
+    "custo_anual": 30184.034090666668,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   },
   {
     "regime": "REAL",
@@ -2622,7 +2830,9 @@
     "inss_impostos": 597.1201290666667,
     "inss_total": 2745.0342624,
     "custo_mensal": 2466.163410755556,
-    "custo_anual": 29593.960929066667
+    "custo_anual": 29593.960929066667,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.02152991980259099
   },
   {
     "regime": "REAL",
@@ -2647,6 +2857,8 @@
     "inss_impostos": 534.5167530666666,
     "inss_total": 2457.2388864,
     "custo_mensal": 2207.6054627555554,
-    "custo_anual": 26491.265553066663
+    "custo_anual": 26491.265553066663,
+    "quebra_de_cx_pct": 0.0,
+    "plano_assist_pct": 0.0
   }
 ]

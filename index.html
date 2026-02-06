@@ -240,7 +240,7 @@
         <img src="logo.png" alt="Mega Thorra" />
         <div class="titleBlock">
           <h1>Calculadora de Salários</h1>
-          <p>Selecione a loja, o cargo e a quantidade para preencher automaticamente os custos mensais e anuais.</p>
+          <p>Selecione a loja e o cargo, digite (ou não) o salário base e informe a quantidade para calcular os custos.</p>
         </div>
       </div>
       <div class="badge">🧮 Custo Médio Anual 2026</div>
@@ -289,6 +289,15 @@
               </div>
             </div>
           </div>
+
+          <div class="field">
+            <label>💰 Salário base (digitável)</label>
+            <div class="control">
+              <input id="salarioManual" type="text" inputmode="decimal" placeholder="Ex.: 1.621,00" />
+            </div>
+            <div class="hint" style="margin-top:6px;">Se vazio, usa o salário padrão do cargo (base do cadastro).</div>
+          </div>
+
 
           <div class="actions">
             <button class="btn btnPrimary" id="btnCalcular">✅ Calcular</button>
@@ -339,6 +348,111 @@
 
     const mensalDe = (anual) => Number(anual || 0) / 12;
 
+    const parseBRL = (s) => {
+      if (s === null || s === undefined) return NaN;
+      const txt = String(s).trim();
+      if (!txt) return NaN;
+      // aceita "1621", "1.621,00", "R$ 1.621,00"
+      const cleaned = txt
+        .replace(/\s/g, "")
+        .replace(/R\$/gi, "")
+        .replace(/\./g, "")
+        .replace(/,/g, ".");
+      const n = Number(cleaned);
+      return Number.isFinite(n) ? n : NaN;
+    };
+
+    const getSalarioManualUnit = () => {
+      const el = $("salarioManual");
+      if (!el) return NaN;
+      return parseBRL(el.value);
+    };
+
+    const computeModelo = (reg, salarioBaseUnit) => {
+      const base = Number(salarioBaseUnit || 0);
+
+      // Quebra de caixa e plano assistencial são proporcionais ao salário
+      const refSal = Number(reg.salario_na || base || 0);
+
+      let quebraPct = Number(reg.quebra_de_cx_pct);
+      if (!Number.isFinite(quebraPct)) {
+        const qFix = Number(reg.quebra_de_cx || 0);
+        quebraPct = (refSal > 0) ? (qFix / refSal) : 0;
+      }
+
+      let planoPct = Number(reg.plano_assist_pct);
+      if (!Number.isFinite(planoPct)) {
+        const pFix = Number(reg.plano_assist || 0);
+        planoPct = (refSal > 0) ? (pFix / refSal) : 0;
+      }
+
+      const quebra = base * (Number.isFinite(quebraPct) ? quebraPct : 0);
+      const vt = Number(reg.vale_transporte || 0);
+      const planoAssist = base * (Number.isFinite(planoPct) ? planoPct : 0);
+      const planoOdont = Number(reg.plano_odont || 0);
+      const va = Number(reg.vale_alimentacao || 0);
+
+      const beneficiosMes = quebra + vt + planoAssist + planoOdont + va;
+      const salarioTotalMes = base + beneficiosMes;
+
+      // Igual ao padrão do JSON original:
+      // - salário_ano considera 11 meses (13º e férias entram como itens separados)
+      const salarioAno = salarioTotalMes * 11;
+
+      // Base de cálculo de provisões (conforme planilha Excel):
+      // - Férias = (salário base) + 1/3 do salário base
+      // - 13º = salário base
+      // Observação: quebra de caixa e benefícios NÃO entram nessa base na planilha.
+      const baseProvisoes = base;
+
+      // Férias (base) + 1/3
+      const feriasAno = baseProvisoes * (4/3);
+
+      // 13º (base)
+      const decimoAno = baseProvisoes;
+
+      // FGTS anual: 8% sobre (12 meses de base + férias)
+      const fgtsAno = 0.08 * (baseProvisoes * 12 + feriasAno);
+
+      // Multa 40% do FGTS
+      const quarentaAno = 0.40 * fgtsAno;
+
+      const totalAno = salarioAno + feriasAno + decimoAno + fgtsAno + quarentaAno;
+      const mediaMes = totalAno / 12;
+
+      // Encargos patronais consolidados (compatível com o JSON original)
+      const inssAno = 0.08 * totalAno;
+      const impostosAno = (String(reg.regime || "").toUpperCase() === "REAL") ? (0.02224 * totalAno) : 0;
+
+      const custoAnual = totalAno + inssAno + impostosAno;
+      const custoMensal = custoAnual / 12;
+
+      return {
+        ...reg,
+        // Valores recalculados conforme salário informado
+        quebra_de_cx_pct: quebraPct,
+        plano_assist_pct: planoPct,
+        quebra_de_cx: quebra,
+        plano_assist: planoAssist,
+        salario_na: base,
+        salario_total: salarioTotalMes,
+        salario_ano: salarioAno,
+        ferias: feriasAno,
+        c_13_salario: decimoAno,
+        fgts: fgtsAno,
+        c_0_4: quarentaAno,
+        total_ano: totalAno,
+        media_mes: mediaMes,
+        inss_mes: inssAno / 12,
+        inss_ano: inssAno,
+        inss_impostos: impostosAno,
+        inss_total: inssAno + impostosAno,
+        custo_mensal: custoMensal,
+        custo_anual: custoAnual
+      };
+    };
+
+
     let dados = [];
     let registroAtual = null; // loja+cargo
 
@@ -377,7 +491,9 @@
       }
 
       const qtd = getQtd();
-      const r = reg;
+      const salarioManual = getSalarioManualUnit();
+      const salarioBaseUnit = Number.isFinite(salarioManual) && salarioManual > 0 ? salarioManual : Number(reg.salario_na || 0);
+      const r = computeModelo(reg, salarioBaseUnit);
 
       // BASE (mensal)
       const salarioBaseMes = Number(r.salario_na || 0) * qtd;
@@ -465,9 +581,13 @@
 
       const qtd = getQtd();
 
-      const salarioBase = Number(reg.salario_na || 0) * qtd;
-      const salarioTotal = Number(reg.salario_total || 0) * qtd;
-      const custoMensal = Number(reg.custo_mensal || 0) * qtd;
+            const salarioManual = getSalarioManualUnit();
+      const salarioBaseUnit = Number.isFinite(salarioManual) && salarioManual > 0 ? salarioManual : Number(reg.salario_na || 0);
+      const r = computeModelo(reg, salarioBaseUnit);
+
+      const salarioBase = Number(r.salario_na || 0) * qtd;
+      const salarioTotal = Number(r.salario_total || 0) * qtd;
+      const custoMensal = Number(r.custo_mensal || 0) * qtd;
 
       if (salarioBase <= 0) {
         box.style.display = "none";
@@ -509,6 +629,8 @@
       $("cargoSelect").disabled = true;
       $("regime").value = "";
       $("qtd").value = 1;
+      const sEl = $("salarioManual");
+      if (sEl) sEl.value = "";
 
       registroAtual = null;
 
@@ -526,8 +648,12 @@
       }
 
       const qtd = getQtd();
-      const salarioBase = Number(registroAtual.salario_na || 0) * qtd;
-      const custoMensal = Number(registroAtual.custo_mensal || 0) * qtd;
+            const salarioManual = getSalarioManualUnit();
+      const salarioBaseUnit = Number.isFinite(salarioManual) && salarioManual > 0 ? salarioManual : Number(registroAtual.salario_na || 0);
+      const r = computeModelo(registroAtual, salarioBaseUnit);
+
+      const salarioBase = Number(r.salario_na || 0) * qtd;
+      const custoMensal = Number(r.custo_mensal || 0) * qtd;
 
       $("resultado").style.display = "block";
       $("resultado").innerHTML = `✅ <b>Custo mensal total:</b> <b>${fmtBRL(custoMensal)}</b>`;
@@ -630,6 +756,12 @@
         const reg = buscarRegistro(loja, cargo);
         registroAtual = reg;
 
+        // Se o usuário ainda não digitou salário, deixa em branco (usa o padrão do cadastro)
+        const sEl = $("salarioManual");
+        if (sEl) {
+          sEl.placeholder = `Ex.: ${fmtBRL(Number(reg?.salario_na || 0))}`;
+        }
+
         preencherRegime(reg);
         atualizarCards(reg);
       });
@@ -638,6 +770,14 @@
         if (!registroAtual) return;
         atualizarCards(registroAtual);
       });
+
+      const salarioEl = $("salarioManual");
+      if (salarioEl) {
+        salarioEl.addEventListener("input", () => {
+          if (!registroAtual) return;
+          atualizarCards(registroAtual);
+        });
+      }
 
       $("btnCalcular").addEventListener("click", calcular);
       $("btnLimpar").addEventListener("click", limparTudo);
