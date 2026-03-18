@@ -237,7 +237,7 @@
 
     <div class="header">
       <div class="brandBox">
-        <img src="logo.png" alt="Mega Thorra" onerror="this.style.display='none'" />
+        <img src="logo.png" alt="Mega Thorra" />
         <div class="titleBlock">
           <h1>Calculadora de Salários</h1>
           <p>Selecione a loja e o cargo, digite (ou não) o salário base e informe a quantidade para calcular os custos.</p>
@@ -334,17 +334,6 @@
   <script>
     const $ = (id) => document.getElementById(id);
 
-    const defaultParams = {
-      fgts_rate: 0.08,
-      fgts_multa_rate: 0.40,
-      inss_rate_sobre_total_ano: 0.08,
-      impostos_rate_real_sobre_total_ano: 0.278,
-      salario_ano_meses: 11,
-      ferias_factor_sobre_salario_base: 4 / 3
-    };
-
-    let params = { ...defaultParams };
-
     const fmtBRL = (v) => {
       const n = Number(v);
       if (!Number.isFinite(n)) return "—";
@@ -382,26 +371,19 @@
     const computeModelo = (reg, salarioBaseUnit) => {
       const base = Number(salarioBaseUnit || 0);
 
-      const fgtsRate = Number.isFinite(Number(params.fgts_rate)) ? Number(params.fgts_rate) : defaultParams.fgts_rate;
-      const fgtsMultaRate = Number.isFinite(Number(params.fgts_multa_rate)) ? Number(params.fgts_multa_rate) : defaultParams.fgts_multa_rate;
-      const inssRate = Number.isFinite(Number(params.inss_rate_sobre_total_ano)) ? Number(params.inss_rate_sobre_total_ano) : defaultParams.inss_rate_sobre_total_ano;
-      const impostoRealRate = Number.isFinite(Number(params.impostos_rate_real_sobre_total_ano)) ? Number(params.impostos_rate_real_sobre_total_ano) : defaultParams.impostos_rate_real_sobre_total_ano;
-      const salarioAnoMeses = Number.isFinite(Number(params.salario_ano_meses)) ? Number(params.salario_ano_meses) : defaultParams.salario_ano_meses;
-      const feriasFactor = Number.isFinite(Number(params.ferias_factor_sobre_salario_base)) ? Number(params.ferias_factor_sobre_salario_base) : defaultParams.ferias_factor_sobre_salario_base;
-
       // Quebra de caixa e plano assistencial são proporcionais ao salário
       const refSal = Number(reg.salario_na || base || 0);
 
       let quebraPct = Number(reg.quebra_de_cx_pct);
       if (!Number.isFinite(quebraPct)) {
         const qFix = Number(reg.quebra_de_cx || 0);
-        quebraPct = refSal > 0 ? (qFix / refSal) : 0;
+        quebraPct = (refSal > 0) ? (qFix / refSal) : 0;
       }
 
       let planoPct = Number(reg.plano_assist_pct);
       if (!Number.isFinite(planoPct)) {
         const pFix = Number(reg.plano_assist || 0);
-        planoPct = refSal > 0 ? (pFix / refSal) : 0;
+        planoPct = (refSal > 0) ? (pFix / refSal) : 0;
       }
 
       const quebra = base * (Number.isFinite(quebraPct) ? quebraPct : 0);
@@ -413,27 +395,46 @@
       const beneficiosMes = quebra + vt + planoAssist + planoOdont + va;
       const salarioTotalMes = base + beneficiosMes;
 
-      // Igual à planilha:
-      // - salário_ano considera 11 meses
-      // - férias e 13º usam a base salarial
-      const salarioAno = salarioTotalMes * salarioAnoMeses;
+      // Igual ao padrão do JSON original:
+      // - salário_ano considera 11 meses (13º e férias entram como itens separados)
+      const salarioAno = salarioTotalMes * 11;
+
+      // Base de cálculo de provisões (conforme planilha Excel):
+      // - Férias = (salário base) + 1/3 do salário base
+      // - 13º = salário base
+      // Observação: quebra de caixa e benefícios NÃO entram nessa base na planilha.
       const baseProvisoes = base;
-      const feriasAno = baseProvisoes * feriasFactor;
+
+      // Férias (base) + 1/3
+      const feriasAno = baseProvisoes * (4/3);
+
+      // 13º (base)
       const decimoAno = baseProvisoes;
-      const fgtsAno = fgtsRate * (baseProvisoes * 12 + feriasAno);
-      const quarentaAno = fgtsMultaRate * fgtsAno;
+
+      // FGTS anual: 8% sobre (12 meses de base + férias)
+      const fgtsAno = 0.08 * (baseProvisoes * 12 + feriasAno);
+
+      // Multa 40% do FGTS
+      const quarentaAno = 0.40 * fgtsAno;
 
       const totalAno = salarioAno + feriasAno + decimoAno + fgtsAno + quarentaAno;
       const mediaMes = totalAno / 12;
 
-      const inssAno = inssRate * totalAno;
-      const impostosAno = (String(reg.regime || "").toUpperCase() === "REAL") ? (impostoRealRate * totalAno) : 0;
+      // INSS empresa (somente regime REAL, conforme regra informada pelo usuário):
+      // anual = (((salário NA + quebra de caixa) * 11) + férias + 13º) * 27,8%
+      // mensal = anual / 12
+      const regimeAtual = String(reg.regime || "").toUpperCase();
+      const inssEmpresaAno = regimeAtual === "REAL"
+        ? ((((base + quebra) * 11) + feriasAno + decimoAno) * 0.278)
+        : 0;
+      const inssEmpresaMes = inssEmpresaAno / 12;
 
-      const custoAnual = totalAno + inssAno + impostosAno;
+      const custoAnual = totalAno + inssEmpresaAno;
       const custoMensal = custoAnual / 12;
 
       return {
         ...reg,
+        // Valores recalculados conforme salário informado
         quebra_de_cx_pct: quebraPct,
         plano_assist_pct: planoPct,
         quebra_de_cx: quebra,
@@ -447,10 +448,10 @@
         c_0_4: quarentaAno,
         total_ano: totalAno,
         media_mes: mediaMes,
-        inss_mes: inssAno / 12,
-        inss_ano: inssAno,
-        inss_impostos: impostosAno,
-        inss_total: inssAno + impostosAno,
+        inss_mes: inssEmpresaMes,
+        inss_ano: inssEmpresaAno,
+        inss_impostos: inssEmpresaAno,
+        inss_total: inssEmpresaAno,
         custo_mensal: custoMensal,
         custo_anual: custoAnual
       };
@@ -528,15 +529,13 @@
       const encargosMes = custoMensal - salarioTotalMes;
       const encargosAno = custoAnual - salarioAno;
 
-      // Composição mensal (igual Excel): INSS (mês) + FGTS(média) + 40%(média) + OUTROS(restante)
-      const inssMes = Number(r.inss_mes || 0) * qtd;
+      // Composição mensal
       const fgtsMes = mensalDe(Number(r.fgts || 0)) * qtd;
       const quarentaMes = mensalDe(Number(r.c_0_4 || 0)) * qtd;
-      const outrosMes = Math.max(0, encargosMes - inssMes - fgtsMes - quarentaMes);
+      const inssEmpresaMes = Number(r.inss_mes || 0) * qtd;
 
-      // Composição anual (igual Excel): INSS + FGTS + 40% + FÉRIAS + 13º + OUTROS (INSS+IMPOSTOS)
-      const inssAno = Number(r.inss_ano || 0) * qtd;
-      const inssImpostosAno = Number(r.inss_impostos || 0) * qtd;
+      // Composição anual
+      const inssEmpresaAno = Number(r.inss_ano || 0) * qtd;
 
       el.innerHTML = `
         <table>
@@ -561,12 +560,11 @@
 
             ${separador("Encargos / Impostos")}
             ${linha("Encargos / Impostos (total)", encargosMes, encargosAno, true)}
-            ${linha("&nbsp;&nbsp;• INSS", inssMes, inssAno)}
             ${linha("&nbsp;&nbsp;• FGTS", fgtsMes, fgtsAno)}
             ${linha("&nbsp;&nbsp;• 40%", quarentaMes, quarentaAno)}
             ${linha("&nbsp;&nbsp;• Férias", 0, feriasAno)}
             ${linha("&nbsp;&nbsp;• 13º Salário", 0, decimoAno)}
-            ${linha("&nbsp;&nbsp;• Outros", outrosMes, inssImpostosAno)}
+            ${String(r.regime || "").toUpperCase() === "REAL" ? linha("&nbsp;&nbsp;• INSS empresa", inssEmpresaMes, inssEmpresaAno) : ""}
 
             ${separador("Totais")}
             ${linha("Custo mensal total", custoMensal, custoAnual, true)}
@@ -732,20 +730,6 @@
     }
 
     async function carregarDados() {
-      try {
-        const respParams = await fetch("parametros.json", { cache: "no-store" });
-        if (respParams.ok) {
-          const loadedParams = await respParams.json();
-          params = { ...defaultParams, ...loadedParams };
-        } else {
-          console.warn("parametros.json não pôde ser carregado. Usando parâmetros padrão.");
-          params = { ...defaultParams };
-        }
-      } catch (err) {
-        console.warn("Erro ao carregar parametros.json. Usando parâmetros padrão.", err);
-        params = { ...defaultParams };
-      }
-
       const resp = await fetch("lojas.json", { cache: "no-store" });
       if (!resp.ok) throw new Error("Falha ao carregar lojas.json");
       dados = await resp.json();
@@ -774,6 +758,7 @@
         const reg = buscarRegistro(loja, cargo);
         registroAtual = reg;
 
+        // Se o usuário ainda não digitou salário, deixa em branco (usa o padrão do cadastro)
         const sEl = $("salarioManual");
         if (sEl) {
           sEl.placeholder = `Ex.: ${fmtBRL(Number(reg?.salario_na || 0))}`;
